@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./pages/home/Home";
+import { Route, Routes } from "react-router-dom";
+import HomeLayout from "./pages/layouts/HomeLayout";
+import About from "./pages/About/About";
+import Contact from "./components/Contact";
+import Serivce from "./pages/Service/Service";
+import SocialMedia from "./pages/Service/SocialMedia";
+import Seo from "./pages/Service/Seo";
+import Webdev from "./pages/Service/Webdev";
+import Perform from "./pages/Service/Performence";
+import Media from "./pages/Service/Media";
+import PortfolioLayout from "./pages/layouts/PortfolioLayout";
+import PortContent from "./components/portfolio-content/PortContent";
+
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomeLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<PortfolioLayout />}>
+            <Route index element={<PortContent />} />
+            <Route path="/portfolio/:status" element={<PortContent />} />
+          </Route>
+          <Route path="/blogs" element={<Blogs />} />
+          {/* <Route path="/blogs" element={<Blog />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/service/media" element={<Media />} />
+          <Route path="/service/seo" element={<Seo />} />
+          <Route path="/service/performence" element={<Perform />} />
+          <Route path="/service/corperate" element={<Serivce />} />
+          <Route path="/service/webdev" element={<Webdev />} />
+          <Route path="/service/social" element={<SocialMedia />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

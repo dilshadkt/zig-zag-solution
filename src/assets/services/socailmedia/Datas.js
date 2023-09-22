@@ -1,0 +1,27 @@
+export const datas = [
+  {
+    title: "1. Strategy Planning",
+    id: 1,
+    desc: "A strong action plan is our first step to developing a successful social media marketing strategy. The strategy planning gives us a clear idea of the goals, target audience, and their pain points. Our social media experts go above and beyond to develop a customized social media plan comprising various content formats. We follow a particular posting schedule to maintain consistency.Our main goal is to bring value to your customers' lives through quality content that will impact people's minds longer. ",
+  },
+  {
+    title: "2. Compelling Content Creation",
+    id: 2,
+    desc: " We believe that content has unlimited power when influencing a customer. It is not just the product that wins the heart. It is the   emotions that connect each other. We have gathered brilliant creative   minds nationwide to craft compelling content, including visually   captivating graphics, videos, and a solid content plan that aligns    with the brand’s voice and resonates with your audience. Let us   provide you with content that's creative, engaging, and drives   meaningful interactions.",
+  },
+  {
+    title: "3. Community Engagement",
+    id: 3,
+    desc: "The biggest success point of social media is the community you build online with shared vision and values. It is vital for building customers who are loyal to the brand, giving you a cutting edge over the competition. We keep in touch with your community by engaging with your audience and responding to comments, messages, etc. An authentic and prompt conversation from the other end increases the credibility and trust of the brand in the mind.   ",
+  },
+  {
+    title: "4. Targeted Advertising",
+    id: 4,
+    desc: "Social media marketing is popular and effective because it can accurately reach targeted audiences. Social media marketing is Data-driven. You decide to launch a new campaign based on the data.    Navigating through this Data by conducting A/B tests maximizes the reach and ROI for your brands.   With an effective social media strategy, your message reaches the right people in any corner of the world.    ",
+  },
+  {
+    title: "5. Performance Analytics  ",
+    id: 5,
+    desc: "As your trusted social media marketing managers, we keep a keen eye on the performance statistics of your page. Closely monitoring the data allows us to optimize the campaign accordingly.     There are various key metrics used to measure the success of a social media campaign, including click-through rates, conversations, shares, followers, etc.   Our role is to understand this data and take actions that improve the result.   ",
+  },
+];

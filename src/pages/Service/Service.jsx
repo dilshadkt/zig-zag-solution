@@ -1,4 +1,3 @@
-// import { Container } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import Corperate from "../../assets/services/corperate/Corporate Branding.jpg";
@@ -8,13 +7,13 @@ import Messaging from "../../assets/services/corperate/Brand Messaging.jpg";
 import Guidness from "../../assets/services/corperate/Brand Guidelines.png";
 import Precense from "../../assets/services/corperate/Online Presence.jpg";
 
-const Container = styled.div`
+export const Container = styled.div`
   @media screen and (max-width: 768px) {
     margin: 0;
   }
   margin: 0px 12%;
 `;
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
   }
@@ -22,7 +21,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const HeaderImg = styled.img`
+export const HeaderImg = styled.img`
   @media screen and (max-width: 768px) {
     height: 220px;
   }
@@ -30,37 +29,37 @@ const HeaderImg = styled.img`
   object-fit: cover;
   border-radius: 20px;
 `;
-const Header = styled.h1`
+export const Header = styled.h1`
   color: red;
   font-weight: 500;
   text-align: center;
 `;
-const Content = styled.span`
+export const Content = styled.span`
   line-height: 30px;
   font-size: 23px;
   text-align: justify;
 `;
-const Highlite = styled.span`
+export const Highlite = styled.span`
   color: red;
   font-weight: 600;
 `;
-const SubHeader = styled.h3`
+export const SubHeader = styled.h3`
   font-size: 20px;
   font-weight: 600;
   margin-top: 40px;
 `;
-const BoxContainer = styled.div`
+export const BoxContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 `;
-const Box = styled.div`
-  margin: 5px 0px;
+export const Box = styled.div`
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 23%;
-  height: 200px;
+  height: 160px;
   min-width: 150px;
   min-height: 150px;
   color: white;
@@ -68,17 +67,18 @@ const Box = styled.div`
   padding: 0px 5px;
   text-align: center;
   background-color: rgb(219, 0, 47);
+
   border-radius: 20px;
 `;
-const BoxItem = styled.div`
-  margin: 5px 0px;
+export const BoxItem = styled.div`
+  margin: 5px;
   cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 18%;
-  height: 180px;
+  height: 150px;
   min-width: 150px;
   min-height: 150px;
   color: white;
@@ -91,7 +91,7 @@ const BoxItem = styled.div`
   z-index: 5;
   font-size: 700;
 `;
-const Image = styled.img`
+export const Image = styled.img`
   z-index: -1;
   position: absolute;
   height: 100%;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BlogsData } from "../../assets/latesBlog/LatesBlog";
+import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -30,6 +31,7 @@ const Content = styled.div`
 const Blog = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
+    min-width: 100%;
   }
   height: 100%;
   width: 30%;
@@ -95,7 +97,14 @@ const Blogs = () => {
               </ImgaeContainer>
               <Title>{item.title}</Title>
               <Descrption>{item.desc}</Descrption>
-              <ReadMore>Read More</ReadMore>
+              <ReadMore>
+                <Link
+                  style={{ color: "inherit", textDecoration: "none" }}
+                  to={`/blogs/${item.api}`}
+                >
+                  Read More
+                </Link>
+              </ReadMore>
             </Blog>
           ))}
         </Content>

@@ -4,6 +4,10 @@ import contact from "../assets/contact/contact us digital marketing agency malap
 
 const Contaienr = styled.div``;
 const Wrapper = styled.div`
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+  }
   padding: 20px 70px;
   display: flex;
 `;
@@ -21,10 +25,14 @@ const Image = styled.img`
   object-fit: cover;
 `;
 const ContactFormm = styled.form`
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
   width: 70%;
   height: 70%;
   padding: 20px;
-  background-color: rgb(229, 228, 228);
+  background-color: rgb(237, 127, 127);
+
   border-radius: 20px;
   display: flex;
   flex-direction: column;

@@ -33,7 +33,7 @@ const Header = styled.h3`
 `;
 const Content = styled.span`
   @media screen and (max-width: 768px) {
-    text-align: center;
+    text-align: justify;
     width: 100%;
   }
   width: 70%;

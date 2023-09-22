@@ -13,7 +13,10 @@ import Media from "./pages/Service/Media";
 import PortfolioLayout from "./pages/layouts/PortfolioLayout";
 import PortContent from "./components/portfolio-content/PortContent";
 
-import Blogs from "./components/Blogs";
+import Blog from "./components/blog/TenDigitalMarket";
+import Training from "./components/blog/Training";
+import Hunting from "./components/blog/Hunting";
+import Blogs from "./pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -26,8 +29,11 @@ function App() {
             <Route index element={<PortContent />} />
             <Route path="/portfolio/:status" element={<PortContent />} />
           </Route>
+          {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/blogs" element={<Blogs />} />
-          {/* <Route path="/blogs" element={<Blog />} /> */}
+          <Route path="/blogs/best-digital" element={<Blog />} />
+          <Route path="/blogs/training" element={<Training />} />
+          <Route path="/blogs/hunting" element={<Hunting />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service/media" element={<Media />} />
           <Route path="/service/seo" element={<Seo />} />

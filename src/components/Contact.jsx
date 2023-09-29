@@ -49,6 +49,11 @@ const Field = styled.input`
 const SelectField = styled.select`
   border: none;
   padding-left: 20px;
+  ///////
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  //////
+  appearance: none;
   font-size: 17px;
   width: 100%;
   height: 45px;
@@ -57,6 +62,8 @@ const SelectField = styled.select`
 `;
 const Option = styled.option``;
 const TextArea = styled.textarea`
+  padding: 6px;
+  font-size: 17px;
   border: none;
   width: 99%;
   height: 70px;

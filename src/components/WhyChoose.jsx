@@ -80,6 +80,9 @@ const ClinteLogo = styled.div`
   justify-content: space-between;
 `;
 const LogoContaienr = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 48%;
+  }
   display: flex;
   align-items: center;
   justify-content: center;

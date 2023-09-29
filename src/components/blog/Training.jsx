@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   justify-content: center;
   padding: 20px 70px;
   margin: 0px 12%;
+  @media screen and (max-width: 768px) {
+    margin: 0%;
+    padding: 20px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -24,6 +28,9 @@ const Content = styled.div`
   margin: 20px;
 `;
 const Description = styled.h3`
+  @media screen and (max-width: 768px) {
+    text-align: justify;
+  }
   margin-top: 20px;
   font-weight: 400;
 `;

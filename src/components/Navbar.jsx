@@ -318,7 +318,7 @@ const Navbar = () => {
           <Box>
             {" "}
             <Link
-              to={"about"}
+              to={"about/data"}
               style={{
                 textDecoration: "none",
                 color: "inherit",

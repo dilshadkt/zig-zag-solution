@@ -114,6 +114,12 @@ const Home = () => {
       <Blogs />
       <Serivice />
       <Portfolio />
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        data-use-service-core
+        defer
+      ></script>
+      <div className="elfsight-app-dd47a4de-64ef-4a6e-80a3-39f12ac7dad1"></div>
     </>
   );
 };

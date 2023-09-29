@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about/:status" element={<About />} />
           <Route path="/portfolio" element={<PortfolioLayout />}>
             <Route index element={<PortContent />} />
             <Route path="/portfolio/:status" element={<PortContent />} />

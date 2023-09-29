@@ -6,9 +6,11 @@ const Content = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 50px 0;
   }
+
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+
   margin: 50px 10%;
 `;
 const Image = styled.img`

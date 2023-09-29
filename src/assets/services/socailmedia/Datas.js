@@ -24,4 +24,9 @@ export const datas = [
     id: 5,
     desc: "As your trusted social media marketing managers, we keep a keen eye on the performance statistics of your page. Closely monitoring the data allows us to optimize the campaign accordingly.     There are various key metrics used to measure the success of a social media campaign, including click-through rates, conversations, shares, followers, etc.   Our role is to understand this data and take actions that improve the result.   ",
   },
+  {
+    title: "6. Adaptation  ",
+    id: 6,
+    desc: "In the ever-evolving landscape of social media, adaptability is prime to long periods of success. We understand that what works today won't necessarily be working the next day or day after that.    That's why we prioritize continuous variation and improvement as an essential pillar of our social media advertising and marketing approach.    We proactively regulate our strategies to leverage new possibilities and trends. This ensures that your brand remains relevant and competitive in the dynamic world of social media.",
+  },
 ];

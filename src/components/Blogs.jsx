@@ -28,21 +28,23 @@ const BlogBox = styled.div`
   @media screen and (max-width: 768px) {
     margin: 50px 0;
   }
-  margin: 50px 12%;
+  margin: 70px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 `;
 const Content = styled.div`
+  padding: 0pc 10px;
   text-align: center;
   color: rgb(119, 139, 174);
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 17px;
 `;
 const BLog = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
+    min-width: 100%;
   }
   flex: 1;
   overflow: hidden;
@@ -62,7 +64,7 @@ const BLog = styled.div`
   }
 `;
 const Image = styled.img`
-  height: 250px;
+  height: 200px;
 
   width: 100%;
   object-fit: cover;
@@ -96,6 +98,16 @@ const Blogs = () => {
       <Wrapper>
         <Header>Blogs</Header>
         <BlogBox>
+          <BLog>
+            <ImgaeContainer>
+              {" "}
+              <Image src={blog1} />
+            </ImgaeContainer>
+
+            <Content>
+              we serve you the best digital 10 marketing agency in Kerala
+            </Content>
+          </BLog>
           <BLog>
             <ImgaeContainer>
               {" "}

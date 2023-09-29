@@ -21,6 +21,7 @@ import onPage from "../../assets/services/seo/On-Page Optimization.jpg";
 import highlite from "../../assets/services/seo/High-Quality Content Creation.jpg";
 import LinkBuild from "../../assets/services/seo/High-Quality Content Creation.jpg";
 import performance from "../../assets/services/seo/Performance Tracking and Analytics.jpg";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 const Seo = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -104,6 +105,7 @@ const Seo = () => {
           </Right>
         </BottomContaier>
       </Wrapper>
+      <AdPortfolio />
     </Container>
   );
 };

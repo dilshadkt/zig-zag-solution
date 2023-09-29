@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import About from "../assets/about.png";
 import Aboutus from "../assets/About Us.png";
+import { useParams } from "react-router-dom";
 
 const Container = styled.div`
   position: relative;
@@ -17,7 +18,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 70px;
+
+  padding: 0px ${(props) => (props.padSize === "data" ? 20 : 70)}px;
   padding-bottom: 20px;
   position: relative;
 `;
@@ -37,7 +39,7 @@ const Content = styled.span`
     width: 100%;
   }
   width: 70%;
-  text-align: left;
+  text-align: ${(props) => (props.textAlign === "data" ? "justify" : "left")};
   line-height: 30px;
   font-size: 20px;
 `;
@@ -97,10 +99,13 @@ const AboutBackground = styled.img`
   opacity: 40%;
 `;
 const AboutUs = () => {
+  const { status } = useParams();
+  console.log(status);
+
   return (
     <>
       <Container id="about">
-        <Wrapper>
+        <Wrapper padSize={status}>
           <Header>About Us</Header>
           <Bottom>
             <Left>
@@ -108,21 +113,74 @@ const AboutUs = () => {
             </Left>
             <Right>
               <BrandTalk>WE MAKE BRANDS TALK</BrandTalk>
-              <Content>
-                At <Hight>Zig Zag</Hight>, we believe the “Road To Success Is
-                Not A Straight One,” hence the name. As your trusted Digital
-                Marketing Agency in Malappuram, we want to be the driving force
-                that turns your business ideas and dreams into reality.{" "}
+              <Content textAlign={status}>
+                {status === "data" ? (
+                  <>
+                    The story that leads us on the extraordinary journey of
+                    uplifting brands to new heights as their digital marketing
+                    company encompasses passion, perseverance and relentless
+                    pursuit of turning vision into success! We understood our
+                    collective strength after working together as a group of
+                    freelance digital marketers from different corners of the
+                    world. With the challenges we faced, the opportunities we
+                    seized and the lessons we learned, our determination was
+                    stronger than ever to build a digital marketing agency in
+                    Malappuram that provided global services to brands.
+                    <div>
+                      About Us The story that leads us on the extraordinary
+                      journey of uplifting brands to new heights as their
+                      digital marketing company encompasses passion,
+                      perseverance and relentless pursuit of turning vision into
+                      success! We understood our collective strength after
+                      working together as a group of freelance digital marketers
+                      from different corners of the world. With the challenges
+                      we faced, the opportunities we seized and the lessons we
+                      learned, our determination was stronger than ever to build
+                      a digital marketing agency in Malappuram that provided
+                      global services to brands. Our journey is a testament to
+                      what determination and unwavering commitment can lead us.
+                      Client Centric and Result-Oriented approach with
+                      Innovative and creative thinking helped us surpass the
+                      expectations of our esteemed clients each time. Rather
+                      than a digital marketing agency, we strive to be your
+                      business growth partner that helps you every step of the
+                      way with creative solutions and strategic brilliance till
+                      you achieve your goals.
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    At <Hight>Zig Zag</Hight>, we believe the “Road To Success
+                    Is Not A Straight One,” hence the name. As your trusted
+                    Digital Marketing Agency in Malappuram, we want to be the
+                    driving force that turns your business ideas and dreams into
+                    reality.
+                  </>
+                )}
               </Content>
-              <Content>
-                {" "}
-                If you are looking for a digital marketing company for your
-                business to take over the ever-evolving digital platforms and
-                establish a compelling online presence, you have come to the
-                right place. We provide comprehensive digital marketing and
-                branding solutions that suit you best.
+              <Content textAlign={status}>
+                {status === "data" ? (
+                  <>
+                    Zig zag is where creative minds meet, collaborate and
+                    flourish. They are the driving force behind our client’s
+                    success. From a one-person show, we have transformed
+                    ourselves into one of Malappuram's best digital marketing
+                    companies by bringing together ideas and creating success
+                    stories.
+                  </>
+                ) : (
+                  <>
+                    If you are looking for a digital marketing company for your
+                    business to take over the ever-evolving digital platforms
+                    and establish a compelling online presence, you have come to
+                    the right place. We provide comprehensive digital marketing
+                    and branding solutions that suit you best.
+                  </>
+                )}
               </Content>
-              <ReadButton>Read Our Story</ReadButton>
+              {!status && <ReadButton>Read Our Story</ReadButton>}
+
               <AboutBackground src={Aboutus} />
             </Right>
           </Bottom>

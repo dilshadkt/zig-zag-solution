@@ -33,11 +33,13 @@ const Blog = styled.div`
     width: 100%;
     min-width: 100%;
   }
-  height: 100%;
+  height: 520px;
   width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  justify-content: space-around;
+
   overflow: hidden;
   border-radius: 20px;
   padding-bottom: 30px;
@@ -55,13 +57,12 @@ const Blog = styled.div`
 `;
 const Image = styled.img`
   height: 250px;
-
+  transform: scale(1.03);
   width: 100%;
   object-fit: cover;
 `;
 const ImgaeContainer = styled.div`
   width: 100%;
-  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;

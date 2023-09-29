@@ -20,8 +20,13 @@ export const datas = [
     desc: "This is where we open our hearts to constructive feedback from our clients and deliver results that exceed all their expectations.    By opening the communication channel, both teams can discuss their thoughts and finally land on the same page for successful media production     ",
   },
   {
-    title: "4.Final Delivery    ",
+    title: "5.Final Delivery    ",
     id: 5,
     desc: "We firmly believe time management is the key to sustaining fruitful relationships with our esteemed clients.  Talk to our expert media professionals to create visuals that captivate, inspire, and drive meaningful engagement for you! .  ",
+  },
+  {
+    title: "6. Storytelling   ",
+    id: 6,
+    desc: "Every piece of media we create is an opportunity for your brand to tell a compelling story that the audience can connect with, to deliver your unique voice, values, and messaging.  Whether it's a promotional video, a social media campaign, or an images series, we try to carry a steady brand picture that resonates with your audience. We create media that appears amazing and conveys a significant and remarkable message. This approach facilitates your target audience to connect with your brand on a deeper level retaining them as your customers.",
   },
 ];

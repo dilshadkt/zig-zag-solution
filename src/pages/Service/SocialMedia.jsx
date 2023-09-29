@@ -16,6 +16,7 @@ import { Header } from "../Service/Service";
 import { HeaderImg } from "../Service/Service";
 import { Content } from "../Service/Service";
 import { SubHeader } from "../Service/Service";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 export const Image = styled.img`
   top: 0;
@@ -116,13 +117,14 @@ const SocialMedia = () => {
                 <Image src={Community} /> Community Engagement
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
-                {" "}
                 <Image src={Advertisment} />
                 Targeted Advertising
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
-                {" "}
                 <Image src={Performence} /> Performance Analytics
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(6)}>
+                <Image src={Performence} /> Adaptation
               </BoxItem>
             </BoxContainer>
           </Left>
@@ -139,6 +141,7 @@ const SocialMedia = () => {
           </Right>
         </BottomContaier>
       </Wrapper>
+      <AdPortfolio />
     </Container>
   );
 };

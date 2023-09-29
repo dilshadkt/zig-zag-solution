@@ -5,7 +5,7 @@ import Creattion from "../../assets/services/webdev/Launch and Maintenance.jpg";
 import Community from "../../assets/services/webdev/Testing and Quality Assurance.jpg";
 import Advertisment from "../../assets/services/webdev/Content Integration.jpg";
 import Performence from "../../assets/services/webdev/Design and Development.jpg";
-import { datas } from "../../assets/services/socailmedia/Datas";
+import { datas } from "../../assets/services/webdev/Data";
 import { Container } from "./Service";
 import { Wrapper } from "./Service";
 import { Header } from "./Service";
@@ -19,6 +19,7 @@ import { BottomContaier } from "./SocialMedia";
 import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 const Webdev = () => {
   ///////////////////////////////////////
@@ -32,7 +33,7 @@ const Webdev = () => {
     <Container>
       <Wrapper>
         <HeaderImg src={webdev} />
-        <Header>Social Media Marketing in Malappuram</Header>
+        <Header>Website Development Services in Malappuram</Header>
         <Content>
           A website is a visual representation of your brand online. It should
           be a reflection of your corporate brand identity. We specialize in
@@ -69,6 +70,9 @@ const Webdev = () => {
                 {" "}
                 <Image src={Performence} /> Launch and Maintenance
               </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(6)}>
+                <Image src={Performence} /> Launch and Maintenance
+              </BoxItem>
             </BoxContainer>
           </Left>
           <Right>
@@ -84,6 +88,7 @@ const Webdev = () => {
           </Right>
         </BottomContaier>
       </Wrapper>
+      <AdPortfolio />
     </Container>
   );
 };

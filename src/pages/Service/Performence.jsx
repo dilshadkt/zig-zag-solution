@@ -19,6 +19,7 @@ import { BottomContaier } from "./SocialMedia";
 import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 const Perform = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -67,6 +68,16 @@ const Perform = () => {
                 <Image src={Advertisment} />
                 Continuous Optimization
               </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(5)}>
+                {" "}
+                <Image src={Advertisment} />
+                Multichannel Integration
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(6)}>
+                {" "}
+                <Image src={Advertisment} />
+                A/B Testing
+              </BoxItem>
             </BoxContainer>
           </Left>
           <Right>
@@ -82,6 +93,7 @@ const Perform = () => {
           </Right>
         </BottomContaier>
       </Wrapper>
+      <AdPortfolio />
     </Container>
   );
 };

@@ -110,10 +110,10 @@ const Home = () => {
         </Wrapper>
       </Container>
       <AboutUs />
-      <Portfolio />
-      <Serivice />
-      <Blogs />
       <WhyChoose />
+      <Blogs />
+      <Serivice />
+      <Portfolio />
     </>
   );
 };

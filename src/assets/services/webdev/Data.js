@@ -24,4 +24,9 @@ export const datas = [
     id: 5,
     desc: "Our partnership continues after the launch. We offer ongoing maintenance and support to keep your website running smoothly and remain up-to-date and secure. Create your signature websites with us today!",
   },
+  {
+    title: "6. Search Engine Optimization (SEO) Integration    ",
+    id: 6,
+    desc: "Creating a visually attractive and purposeful site is only part of the equation. To maximize its impact and attain your audience effectively, we recognize the significance of integrating search engine optimization into every element of your internet site improvement. By integrating search engine optimization into the internet site improvement system, we make sure that your website is not just visually spectacular but is discoverable by search engines like google.This strategic method helps long-term achievement using organic site visitors that converts to customers.",
+  },
 ];

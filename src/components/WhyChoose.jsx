@@ -4,6 +4,15 @@ import Clientcentric from "../assets/Client-Centric-Digital-Marketing-Malappuram
 import innovation from "../assets/Innovative-Digital-Marketing-Malappuram.gif";
 import result from "../assets/Result-Oriented-Digital-Marketing-Malappuram.gif";
 import transpareny from "../assets/Transparency-Digital-Marketing-Malappuram.gif";
+import Anekavarna from "../assets/client-logo/BIDON-2.png";
+import LIYAK from "../assets/client-logo/LIYAK.png";
+import kayil from "../assets/client-logo/kayil.png";
+import kems from "../assets/client-logo/kems.png";
+import midas from "../assets/client-logo/midas..png";
+import poke from "../assets/client-logo/poke.png";
+import white from "../assets/client-logo/white.png";
+import BIDON from "../assets/client-logo/Anekavarna---Logo..png";
+import skyblue from "../assets/client-logo/skyblue.png";
 
 const Container = styled.div`
   position: relative;
@@ -63,6 +72,38 @@ const Description = styled.span`
   text-align: center;
   color: rgb(161, 124, 122);
 `;
+const ClinteLogo = styled.div`
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const LogoContaienr = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+  width: 250px;
+  border-radius: 10px;
+  height: 70px;
+  margin: 8px 0px;
+  overflow: hidden;
+  /* border: 2px solid rgb(255, 235, 235); */
+`;
+const Image = styled.img`
+  background-color: rgb(252, 250, 250);
+  opacity: 85%;
+  &:hover {
+    background-color: rgb(248, 232, 232);
+    opacity: 100%;
+    transform: scale(1.08);
+  }
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`;
 const WhyChoose = () => {
   return (
     <Container>
@@ -102,6 +143,38 @@ const WhyChoose = () => {
             </Description>
           </Box>
         </Boxes>
+        <ClinteLogo>
+          <LogoContaienr>
+            <Image src={Anekavarna} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={LIYAK} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={kayil} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={kems} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={midas} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={poke} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={white} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={BIDON} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={skyblue} />
+          </LogoContaienr>
+          <LogoContaienr>
+            <Image src={Anekavarna} />
+          </LogoContaienr>
+        </ClinteLogo>
       </Wrapper>
     </Container>
   );

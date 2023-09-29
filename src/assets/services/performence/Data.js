@@ -19,4 +19,14 @@ export const datas = [
     id: 4,
     desc: "We monitor campaign performance promptly, fine-tuning strategies based on real-time data. This approach ensures we're always on the path to great results.    3x your marketing efforts with our performance-driven approach and turn your campaigns into success stories that generate real business growth.  ",
   },
+  {
+    title: "5.Multichannel Integration   ",
+    id: 5,
+    desc: "By strategically coordinating your advertising and marketing efforts throughout specific channels, we create a unified brand experience that enhances your message and drives conversions. Our multichannel method ensures that your target audience sees your brand anyplace they go online. This complete technique guarantees that your performance advertising and marketing efforts yield the first-class possible results.     ",
+  },
+  {
+    title: " 6. A/B Testing  ",
+    id: 6,
+    desc: "To obtain peak performance on your marketing campaigns, we are committed to a continuous improvement through A/B checking out and experimentation.   By often experimenting with distinctive strategies and strategies, we find new opportunities for optimization. This iterative method allows us to stay alert and adapt to changing market dynamics. It also ensures that we're always imposing the best strategies to satisfy your overall performance goals      ",
+  },
 ];

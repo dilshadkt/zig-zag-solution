@@ -76,7 +76,7 @@ const Portfolio = () => {
       <Wrapper>
         <Navbar>
           <NavItems>
-            <Item>ALL</Item>
+            <Item>ALL </Item>
             <Item>Brand Identity</Item>
             <Item>Social Media</Item>
           </NavItems>

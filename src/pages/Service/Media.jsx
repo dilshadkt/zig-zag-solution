@@ -19,6 +19,7 @@ import { BottomContaier } from "./SocialMedia";
 import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 const Media = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -67,6 +68,10 @@ const Media = () => {
                 {" "}
                 <Image src={Performence} /> Final Delivery
               </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(6)}>
+                {" "}
+                <Image src={Performence} /> Storytelling
+              </BoxItem>
             </BoxContainer>
           </Left>
           <Right>
@@ -82,6 +87,7 @@ const Media = () => {
           </Right>
         </BottomContaier>
       </Wrapper>
+      <AdPortfolio />
     </Container>
   );
 };

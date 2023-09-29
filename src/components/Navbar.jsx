@@ -191,7 +191,7 @@ const Navbar = () => {
             <Item>
               {" "}
               <Link
-                to={"about"}
+                to={"about/data"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 About
@@ -302,65 +302,72 @@ const Navbar = () => {
       <MobileNav>
         <NavBar>
           <Box>
-            <Icon src={home} />
+            <Link
+              to={"/"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={home} />
 
-            <TItle>
-              {" "}
-              <Link
-                to={"/"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Home
-              </Link>
-            </TItle>
+              <TItle> Home</TItle>
+            </Link>
           </Box>
           <Box>
             {" "}
-            <Icon src={about} />
-            <TItle>
-              {" "}
-              <Link
-                to={"about"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                About
-              </Link>
-            </TItle>
+            <Link
+              to={"about"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={about} />
+              <TItle> About</TItle>
+            </Link>
           </Box>
           <Box>
-            <Icon src={service} />
-            <TItle>
-              <Link
-                to={"/service/corperate"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Service
-              </Link>
-            </TItle>
+            <Link
+              to={"/service/corperate"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={service} />
+              <TItle>Service</TItle>
+            </Link>
           </Box>
           <Box>
-            <Icon src={works} />
-            <TItle>
-              {" "}
-              <Link
-                to={"portfolio"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Portfolio
-              </Link>
-            </TItle>
+            {" "}
+            <Link
+              to={"portfolio"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={works} />
+              <TItle>Portfolio</TItle>
+            </Link>
           </Box>
           <Box>
-            <Icon src={contact} />
-            <TItle>
-              {" "}
-              <Link
-                to={"contact"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Contact
-              </Link>
-            </TItle>
+            <Link
+              to={"contact"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={contact} />
+              <TItle> Contact</TItle>
+            </Link>
           </Box>
         </NavBar>
       </MobileNav>

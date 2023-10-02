@@ -52,7 +52,7 @@ const Center = styled.div`
 `;
 const Right = styled.div`
   @media screen and (max-width: 768px) {
-    display: none;
+    display: ${(props) => (props.value ? "none" : "")};
   }
   flex: 3;
   display: flex;
@@ -84,6 +84,9 @@ const NavItems = styled.ul`
 `;
 
 const Whatssap = styled.a`
+  @media screen and (max-width: 768px) {
+    bottom: 100px;
+  }
   color: white;
   background-color: rgb(37, 211, 102);
   border-radius: 50%;
@@ -285,7 +288,7 @@ const Navbar = () => {
             </Item>
           </NavItems>
         </Center>
-        <Right>
+        <Right value={scrolled}>
           <ContactIcon>
             <Link
               to={"/contact"}

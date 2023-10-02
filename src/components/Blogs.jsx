@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import blog1 from "../assets/latesBlog/A Guide to Boosting Online Visibility for Digital Marketing Agency in Kerala.jpg";
+import blog1 from "../assets/latesBlog/Digital Marketing Agency Proven Strategies for Online Success.jpg";
 import blog2 from "../assets/latesBlog/Digital Marketing Agency Expert Strategies for  Businesses.jpeg";
 import blog3 from "../assets/latesBlog/How To Digital Marketing Agency Helps Businesses Stay Ahead.jpg";
+import blog4 from "../assets/latesBlog/A Guide to Boosting Online Visibility for Digital Marketing Agency in Kerala.jpg";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -28,17 +29,17 @@ const BlogBox = styled.div`
   @media screen and (max-width: 768px) {
     margin: 50px 0;
   }
+  width: 100%;
   margin: 70px 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 `;
 const Content = styled.div`
-  padding: 0pc 10px;
+  padding: 0px 10px;
   text-align: center;
   color: rgb(119, 139, 174);
-  margin-top: 10px;
+  margin-top: 13px;
   font-size: 17px;
 `;
 const BLog = styled.div`
@@ -46,13 +47,15 @@ const BLog = styled.div`
     margin-bottom: 20px;
     min-width: 100%;
   }
+  /* height: 270px; */
   flex: 1;
   overflow: hidden;
   border-radius: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-color: rgb(252, 250, 250);
   max-width: 300px;
   min-width: 250px;
+  cursor: pointer;
   /* min-height: 300px;  */
   margin: 5px;
   &:hover ${Content} {
@@ -64,8 +67,8 @@ const BLog = styled.div`
   }
 `;
 const Image = styled.img`
-  height: 200px;
-
+  height: 100%;
+  /* transform: scale(1.1); */
   width: 100%;
   object-fit: cover;
 `;
@@ -86,7 +89,7 @@ const ExploreBtn = styled.div`
 `;
 const ImgaeContainer = styled.div`
   width: 100%;
-  height: 70%;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,44 +102,66 @@ const Blogs = () => {
         <Header>Blogs</Header>
         <BlogBox>
           <BLog>
-            <ImgaeContainer>
-              {" "}
-              <Image src={blog1} />
-            </ImgaeContainer>
+            <Link
+              style={{ color: "inherit", textDecoration: "none" }}
+              to={"/blogs/best-digital"}
+            >
+              <ImgaeContainer>
+                {" "}
+                <Image src={blog4} />
+              </ImgaeContainer>
 
-            <Content>
-              we serve you the best digital 10 marketing agency in Kerala
-            </Content>
+              <Content>
+                we serve you the best digital 10 marketing agency in Kerala
+              </Content>
+            </Link>
           </BLog>
           <BLog>
-            <ImgaeContainer>
-              {" "}
-              <Image src={blog1} />
-            </ImgaeContainer>
+            <Link
+              style={{ color: "inherit", textDecoration: "none" }}
+              to={"/blogs/training"}
+            >
+              <ImgaeContainer>
+                {" "}
+                <Image src={blog1} />
+              </ImgaeContainer>
 
-            <Content>
-              we serve you the best digital 10 marketing agency in Kerala
-            </Content>
+              <Content>
+                Searching for the top digital marketing Training center in
+                Kerala? Look no further
+              </Content>
+            </Link>
           </BLog>
           <BLog>
-            <ImgaeContainer>
-              {" "}
-              <Image src={blog2} />
-            </ImgaeContainer>
+            <Link
+              style={{ color: "inherit", textDecoration: "none" }}
+              to={"/blogs/hunting"}
+            >
+              <ImgaeContainer>
+                {" "}
+                <Image src={blog2} />
+              </ImgaeContainer>
 
-            <Content>
-              we serve you the best digital 10 marketing agency in Kerala
-            </Content>
+              <Content>
+                Are you Hunting for Malappuram’s Best Digital Marketing Agency?
+              </Content>
+            </Link>
           </BLog>
           <BLog>
-            <ImgaeContainer>
-              {" "}
-              <Image src={blog3} />
-            </ImgaeContainer>
+            <Link
+              style={{ color: "inherit", textDecoration: "none" }}
+              to={"/blogs/Unlocking"}
+            >
+              <ImgaeContainer>
+                {" "}
+                <Image src={blog3} />
+              </ImgaeContainer>
 
-            <Content>
-              we serve you the best digital 10 marketing agency in Kerala
-            </Content>
+              <Content>
+                Unlocking Organic Traffic: A Guide to Boosting Online Visibility
+                for Zig Zag Digital Marketing Agency in Manjeri, Kerala
+              </Content>
+            </Link>
           </BLog>
         </BlogBox>
         <ExploreBtn>

@@ -208,12 +208,13 @@ const Serivice = () => {
                 <Icon src={Websitedev} />
               </ImageContainer>
 
-              <Content>Corporate Branding</Content>
+              <Content>Website Development </Content>
               <List>
-                <Item>Market Research</Item>
-                <Item>Strategy Development</Item>
-                <Item>Design and Collateral Creation</Item>
-                <Item>Implementation</Item>
+                <Item>Discovery and Planning</Item>
+                <Item>Design and Mockup</Item>
+                <Item>Development</Item>
+                <Item>Testing and Quality Assurance</Item>
+                <Item>Launch and Deployment</Item>
               </List>
               <LearnMore>
                 {" "}
@@ -230,13 +231,13 @@ const Serivice = () => {
                 <Icon src={performence} />
               </ImageContainer>
 
-              <Content>Social media marketing</Content>
+              <Content>Performance Marketing</Content>
               <List>
-                <Item>Strategy Development</Item>
-                <Item>Design Creation</Item>
-                <Item>Content Scheduling & Publishing</Item>
-                <Item>Community Engagement</Item>
-                <Item>Analytics</Item>
+                <Item>Goal Setting</Item>
+                <Item>Audience and Channel Research</Item>
+                <Item>Campaign Creation</Item>
+                <Item>Launch and Monitoring</Item>
+                <Item>Data Analysis and Optimization</Item>
               </List>
               <LearnMore>
                 {" "}
@@ -253,13 +254,13 @@ const Serivice = () => {
                 <Icon src={mediaprod} />
               </ImageContainer>
 
-              <Content>SEO</Content>
+              <Content>Media Production</Content>
               <List>
-                <Item>Keyword Research</Item>
-                <Item>On-Page Optimization</Item>
-                <Item>Technical SEO</Item>
-                <Item>Link Building</Item>
-                <Item>Analytics and Reporting</Item>
+                <Item>Concept Development</Item>
+                <Item>Pre-Production Planning</Item>
+                <Item>Production Phase</Item>
+                <Item>Post-Production Editing</Item>
+                <Item>Review and Feedback</Item>
               </List>
               <LearnMore>
                 {" "}

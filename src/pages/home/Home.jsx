@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Branding from "../../assets/digital-market-agencies-malappuram-log.png";
 import MoueScroll from "../../components/MoueScroll";
@@ -86,15 +86,6 @@ const Description = styled.div`
 `;
 
 const Home = () => {
-  async function getReviews() {
-    const result = await fetch(
-      "https://static.elfsight.com/platform/platform.js"
-    );
-    console.log(result);
-  }
-  useEffect(() => {
-    getReviews();
-  }, []);
   return (
     <>
       <Container id="home">

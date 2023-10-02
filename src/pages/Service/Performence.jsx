@@ -70,12 +70,12 @@ const Perform = () => {
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
                 {" "}
-                <Image src={Advertisment} />
+                <Image src={Creattion} />
                 Multichannel Integration
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={Advertisment} />
+                <Image src={Planning} />
                 A/B Testing
               </BoxItem>
             </BoxContainer>

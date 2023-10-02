@@ -24,12 +24,16 @@ const Navbar = styled.div`
 const NavItems = styled.ul`
   @media only screen and (max-width: 768px) {
     margin: 0;
+
     padding: 0;
   }
   list-style: none;
   display: flex;
 `;
 const Item = styled.li`
+  @media only screen and (max-width: 768px) {
+    margin: 0px 7px;
+  }
   cursor: pointer;
   margin: 0px 15px;
   &:hover {

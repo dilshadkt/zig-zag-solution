@@ -46,14 +46,23 @@ export const Left = styled.div`
   flex: 1;
 `;
 export const Right = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 
   flex: 2;
 `;
 export const RightContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
   height: 100%;
   overflow: hidden;
   position: relative;

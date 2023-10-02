@@ -70,7 +70,7 @@ const Media = () => {
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={Performence} /> Storytelling
+                <Image src={Creattion} /> Storytelling
               </BoxItem>
             </BoxContainer>
           </Left>

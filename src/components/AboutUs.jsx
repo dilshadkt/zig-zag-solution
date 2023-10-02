@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import About from "../assets/about.png";
 import Aboutus from "../assets/About Us.png";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Container = styled.div`
   position: relative;
@@ -179,7 +179,15 @@ const AboutUs = () => {
                   </>
                 )}
               </Content>
-              {!status && <ReadButton>Read Our Story</ReadButton>}
+              {!status && (
+                <Link
+                  style={{ color: "inherit", textDecoration: "none" }}
+                  to={"/about/data"}
+                >
+                  {" "}
+                  <ReadButton>Read Our Story </ReadButton>
+                </Link>
+              )}
 
               <AboutBackground src={Aboutus} />
             </Right>

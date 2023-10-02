@@ -44,11 +44,11 @@ const Header = styled.div`
   }
   text-align: left;
 
-  margin-top: 10px;
+  margin-top: 7px;
   font-weight: 500;
   width: 75%;
   color: rgb(119, 139, 174);
-  font-size: 24px;
+  font-size: 23px;
 `;
 const GetButton = styled.button`
   @media screen and (max-width: 768px) {
@@ -170,7 +170,7 @@ const Footer = () => {
             <Media>
               {" "}
               <a
-                href="https://www.instagram.com/dilshad/"
+                href="https://instagram.com/zig_zag_digital_solutions/"
                 target="blank"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
@@ -180,7 +180,7 @@ const Footer = () => {
             </Media>
             <Media>
               <a
-                href="https://www.facebook.com/QuaFootSpa/"
+                href="https://www.facebook.com/ZIGZAGDigitalSolutions/"
                 target="blank"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
@@ -189,7 +189,7 @@ const Footer = () => {
             </Media>
             <Media>
               <a
-                href="https://www.linkedin.com/in/your-profile-link"
+                href="https://www.linkedin.com/company/zig-zag-digital-solution-s"
                 target="blank"
                 style={{ color: "inherit", textDecoration: "none" }}
               >

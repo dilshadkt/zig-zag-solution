@@ -45,7 +45,7 @@ const Image = styled.img`
   width: 100%;
   transition: all 0.5s ease-out;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
 `;
 const ImageContainer = styled.div`
@@ -89,9 +89,9 @@ const Portfolio = () => {
           {Works.map(
             (item, index) =>
               item.category === "pinned" && (
-                <ImageContainer>
+                <ImageContainer key={index}>
                   {" "}
-                  <Image key={index} src={item.image} />
+                  <Image src={item.image} />
                 </ImageContainer>
               )
           )}

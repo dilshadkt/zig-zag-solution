@@ -16,7 +16,7 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     margin: 0;
   }
-  margin: 0px 12%;
+  margin: 0% 12%;
 `;
 export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
@@ -57,6 +57,9 @@ export const SubHeader = styled.h3`
   margin-top: 40px;
 `;
 export const BoxContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+  }
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -65,6 +68,9 @@ export const Box = styled.div`
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 15px;
+    width: 40%;
+    max-width: 160px;
+    height: 50%;
   }
   margin: 5px;
   display: flex;
@@ -72,7 +78,7 @@ export const Box = styled.div`
   justify-content: center;
   width: 21%;
   height: 160px;
-  min-width: 130px;
+
   min-height: 130px;
   color: white;
   font-size: 19px;
@@ -85,6 +91,8 @@ export const Box = styled.div`
 export const BoxItem = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 17px;
+    width: 30%;
+    min-width: 150px;
   }
   margin: 5px;
   cursor: pointer;
@@ -124,7 +132,6 @@ const Serivce = () => {
   const [content, setContent] = useState([data[0]]);
   function changeThem(id) {
     const result = data.filter((item) => item.id === id);
-    console.log(result);
     setContent(result);
   }
   return (

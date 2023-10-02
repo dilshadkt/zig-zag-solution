@@ -35,6 +35,7 @@ export const Image = styled.img`
 export const BottomContaier = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
+    /* background-color: green; */
   }
   display: flex;
 `;
@@ -84,22 +85,17 @@ const SocialMedia = () => {
         </Content>
         <SubHeader>Why Social Media Marketing?</SubHeader>
         <BoxContainer>
+          <Box>People use social media for various reasons</Box>
           <Box>
-            People use social media for various reasons. But why is social media
-            marketing crucial for brands?
-          </Box>
-          <Box>
-            It is where your customers are. Unlike traditional marketing
-            methods, it is easy for you to target a specific target audience
-            while running ads on social media, giving faster growth and reach.{" "}
+            It is where your customers are. Unlike traditional marketing methods
           </Box>
           <Box>
             The ability to measure insights and performance accurately makes it
-            the best marketing method for brands if used appropriately.
+            the best marketing.
           </Box>
           <Box>
             Our Social media marketing enables your brand awareness, customer
-            engagement, and business growth through tailored strategies.{" "}
+            engagement,
           </Box>
         </BoxContainer>
         <SubHeader>Our Social Media Marketing Approach</SubHeader>

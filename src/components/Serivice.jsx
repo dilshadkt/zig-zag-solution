@@ -67,6 +67,9 @@ const Icon = styled.img`
   width: 50px;
 `;
 const Content = styled.h4`
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
   /* background-color: green; */
   width: 50%;
   text-align: left;

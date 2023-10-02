@@ -11,8 +11,6 @@ import service from "../assets/nav-mobile/services  Digital-Marketing-Malappuram
 import works from "../assets/nav-mobile/works Digital-Marketing-Malappuram.png";
 import contact from "../assets/nav-mobile/contact Digital-Marketing-Malappuram.png";
 const Container = styled.div`
-  @media screen and (max-width: 768px) {
-  }
   position: sticky;
   top: 0;
   z-index: 10;
@@ -31,6 +29,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 const Left = styled.div`
+  @media screen and (max-width: 768px) {
+    display: ${(props) => (props.value ? "none" : "")};
+  }
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -175,7 +176,7 @@ const Navbar = () => {
   return (
     <Container value={scrolled}>
       <Wrapper>
-        <Left>
+        <Left value={scrolled}>
           <Logo src={scrolled ? logo : logoimg} />
         </Left>
         <Center value={scrolled}>

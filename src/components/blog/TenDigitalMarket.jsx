@@ -16,23 +16,36 @@ const Wrapper = styled.div`
   }
 `;
 const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    height: 230px;
+  }
   width: 100%;
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
 `;
 const Header = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
   color: red;
 `;
 const Content = styled.div`
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    margin: 0px;
+    text-align: justify;
+  }
   font-size: 20px;
   margin: 20px;
 `;
 const Description = styled.h3`
   @media screen and (max-width: 768px) {
     text-align: justify;
+    font-size: 17px;
   }
   margin-top: 20px;
+
   font-weight: 400;
 `;
 const Items = styled.ol``;

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import HuntingImg from "../../assets/latesBlog/Digital Marketing Agency’s Expert Strategies for  Businesses.jpeg";
+import HuntingImg from "../../assets/latesBlog/Digital Marketing Agency Expert Strategies for  Businesses.jpeg";
 
 const Container = styled.div``;
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,34 +15,47 @@ const Wrapper = styled.div`
     padding: 20px;
   }
 `;
-const Image = styled.img`
+export const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    height: 230px;
+  }
   width: 100%;
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
 `;
-const Header = styled.h1`
+export const Header = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
   color: red;
 `;
-const Content = styled.div`
+export const Content = styled.div`
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    margin: 0px;
+    text-align: justify;
+  }
   font-size: 20px;
   margin: 20px;
 `;
-const Description = styled.h3`
+export const Description = styled.h3`
   @media screen and (max-width: 768px) {
     text-align: justify;
+    font-size: 17px;
   }
+  font-size: 20px;
   margin-top: 20px;
   font-weight: 400;
 `;
-const Items = styled.ol``;
-const Item = styled.li`
+export const Items = styled.ol``;
+export const Item = styled.li`
   color: red;
   font-weight: 500;
 `;
-const DefItems = styled.dl``;
+export const DefItems = styled.dl``;
 
-const Conclusion = styled.h3`
+export const Conclusion = styled.h3`
   margin: 10px 0px;
 `;
 const Hunting = () => {

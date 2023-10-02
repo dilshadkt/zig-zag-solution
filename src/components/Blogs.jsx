@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import blog1 from "../assets/latesBlog/A Guide to Boosting Online Visibility for Digital Marketing Agency in Kerala.jpg";
-import blog2 from "../assets/latesBlog/Digital Marketing Agency’s Expert Strategies for  Businesses.jpeg";
+import blog2 from "../assets/latesBlog/Digital Marketing Agency Expert Strategies for  Businesses.jpeg";
 import blog3 from "../assets/latesBlog/How To Digital Marketing Agency Helps Businesses Stay Ahead.jpg";
 import { Link } from "react-router-dom";
 

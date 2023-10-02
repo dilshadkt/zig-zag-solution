@@ -1,5 +1,5 @@
 import React from "react";
-import TrainingImg from "../../assets/latesBlog/top digital marketing Training center in Kerala.jpg";
+import TrainingImg from "../../assets/latesBlog/Digital Marketing Agency Proven Strategies for Online Success.jpg";
 import styled from "styled-components";
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -15,21 +15,33 @@ const Wrapper = styled.div`
   }
 `;
 const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    height: 230px;
+  }
   width: 100%;
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
 `;
 const Header = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
   color: red;
 `;
 const Content = styled.div`
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    margin: 0px;
+    text-align: justify;
+  }
   font-size: 20px;
   margin: 20px;
 `;
 const Description = styled.h3`
   @media screen and (max-width: 768px) {
     text-align: justify;
+    font-size: 17px;
   }
   margin-top: 20px;
   font-weight: 400;

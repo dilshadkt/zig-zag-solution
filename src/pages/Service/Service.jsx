@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Corperate from "../../assets/services/corperate/Corporate Branding.jpg";
 import Strategy from "../../assets/services/corperate/Brand Strategy.jpg";
@@ -7,6 +7,10 @@ import Messaging from "../../assets/services/corperate/Brand Messaging.jpg";
 import Guidness from "../../assets/services/corperate/Brand Guidelines.png";
 import Precense from "../../assets/services/corperate/Online Presence.jpg";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { data } from "../../assets/services/corperate/data";
+import { BottomContaier, RightContainer } from "./SocialMedia";
+import { Left } from "./SocialMedia";
+import { Right } from "./SocialMedia";
 
 export const Container = styled.div`
   @media screen and (max-width: 768px) {
@@ -36,6 +40,9 @@ export const Header = styled.h1`
   text-align: center;
 `;
 export const Content = styled.span`
+  @media screen and (max-width: 768px) {
+    font-size: 19px;
+  }
   line-height: 30px;
   font-size: 23px;
   text-align: justify;
@@ -55,14 +62,18 @@ export const BoxContainer = styled.div`
   flex-wrap: wrap;
 `;
 export const Box = styled.div`
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 15px;
+  }
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 23%;
+  width: 21%;
   height: 160px;
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 130px;
+  min-height: 130px;
   color: white;
   font-size: 19px;
   padding: 0px 5px;
@@ -72,15 +83,18 @@ export const Box = styled.div`
   border-radius: 20px;
 `;
 export const BoxItem = styled.div`
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+  }
   margin: 5px;
   cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18%;
-  height: 150px;
-  min-width: 150px;
+  width: 42%;
+  height: 50%;
+  min-width: 100px;
   min-height: 150px;
   color: white;
   font-size: 20px;
@@ -93,18 +107,26 @@ export const BoxItem = styled.div`
   font-size: 700;
 `;
 export const Image = styled.img`
+  top: 0;
+  left: 0;
   z-index: -1;
   position: absolute;
   height: 100%;
   object-fit: cover;
   width: 100%;
-  opacity: 50%;
+  opacity: ${(props) => (props.status === "service" ? 20 : 50)}%;
   transition: all 0.5s ease;
   &:hover {
     transform: scale(1.1);
   }
 `;
 const Serivce = () => {
+  const [content, setContent] = useState([data[0]]);
+  function changeThem(id) {
+    const result = data.filter((item) => item.id === id);
+    console.log(result);
+    setContent(result);
+  }
   return (
     <Container>
       <Wrapper>
@@ -130,114 +152,47 @@ const Serivce = () => {
           <Box>To build trust and credibility among your customers.</Box>
         </BoxContainer>
         <SubHeader>Our Unique Corporate Branding Approach</SubHeader>
-        <BoxContainer>
-          <BoxItem>
-            <Image src={Strategy} />
-            <a
-              href="#Guidelines"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              {" "}
-              Brand Strategy
-            </a>
-          </BoxItem>
-          <BoxItem>
-            {" "}
-            <Image src={Visual} />
-            <a
-              href="#Identity"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              {" "}
-              Visual Identity
-            </a>
-          </BoxItem>
-          <BoxItem>
-            {" "}
-            <Image src={Messaging} />
-            <a
-              href="#Messaging"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              {" "}
-              Brand Messaging
-            </a>
-          </BoxItem>
-          <BoxItem>
-            {" "}
-            <Image src={Precense} />
-            <a
-              href="#Presence"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              {" "}
-              Online Presence
-            </a>
-          </BoxItem>
-          <BoxItem>
-            {" "}
-            <Image src={Guidness} />
-            <a
-              href="#Guidelines"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              {" "}
-              Brand Guidelines
-            </a>
-          </BoxItem>
-        </BoxContainer>
-        <SubHeader id="Strategy">1. Brand Strategy</SubHeader>
-        <Content>
-          A compelling brand strategy is the backbone of corporate branding. The
-          very first step of corporate branding is market research for us.
-          Understanding the market gives us many insights into the product
-          demand, KPIs, target audience, and paint points. The whole idea of
-          corporate branding is to leave a lasting positive impression in the
-          market. Our key differences are important in crashing through the
-          competition and reaching the right customers. We understand the what,
-          how, and where to develop a strong brand strategy for your business.
-        </Content>
-        <SubHeader id="Identity">2. Visual Identity</SubHeader>
-        <Content>
-          What determines the worth of your brand is how the audience perceives
-          it. The simple and most underrated things give the uniqueness your
-          brand deserves. Therefore, we do not look small at the brand's visual
-          identity. The logos, the colour palettes, the typography, and all the
-          other visual elements have their role in defining the brand’s essence
-          most aesthetically. The goal is to find a visual identity for your
-          brand across all digital platforms and collateral that aligns with
-          what your brand stands for!
-        </Content>
-        <SubHeader id="Messaging">3. Brand Messaging</SubHeader>
-        <Content>
-          Words evoke emotions in humans. And when you are a brand, it is
-          crucial to define a specific tone and message for your brand. A unique
-          message conveys the brand’s goals to the target audience most simply
-          and effectively. Your taglines, brand story, and every piece of
-          content that you publish online should convey the same. Overall, the
-          brand messaging should resonate with your audience emotionally.
-        </Content>
-        <SubHeader id="Presence">4. Online Presence</SubHeader>
-        <Content>
-          A strong online presence is at the core of branding for your business.
-          As you develop a corporate branding strategy, it becomes easy for you
-          to understand how to build a strong online presence. Whether your
-          website or social media profiles, the brand elements should reflect
-          your values and stand out from the competitors. We ensure your brand's
-          voice and visuals are seamlessly integrated into your digital assets.
-        </Content>
-        <SubHeader id="Guidelines">5. Brand Guidelines</SubHeader>
-        <Content>
-          Corporate branding is not just about visual elements. A brand without
-          guidelines is a bad option if you have long-term goals to increase
-          your business. In addition to building a recognizable corporate
-          identity, A brand guideline is a rulebook on how your brand elements
-          can be implemented across various platforms. This makes your branding
-          process much easier and more effective. We help you have an entire
-          brand identity that resonates with your market. It's a smart
-          investment that pays off by bringing in loyalty, recognition, and a
-          lasting impact on your target audience.
-        </Content>
+        <BottomContaier>
+          <Left>
+            <BoxContainer>
+              <BoxItem onMouseEnter={() => changeThem(1)}>
+                <Image src={Strategy} />
+                Brand Strategy
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(2)}>
+                <Image src={Visual} />
+                Visual Identity
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(3)}>
+                <Image src={Messaging} />
+                Brand Messaging
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(4)}>
+                <Image src={Strategy} />
+                Online Presence
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(5)}>
+                <Image src={Guidness} />
+                Brand Guidelines
+              </BoxItem>
+              <BoxItem onMouseEnter={() => changeThem(6)}>
+                <Image src={Precense} />
+                Brand Consistency
+              </BoxItem>
+            </BoxContainer>
+          </Left>
+          <Right>
+            <RightContainer>
+              {content.map((item, index) => (
+                <div key={index}>
+                  <Image src={Precense} status="service" />
+                  <SubHeader>{item.title}</SubHeader>
+                  <Content section="right">{item.desc}</Content>
+                </div>
+              ))}
+            </RightContainer>
+          </Right>
+        </BottomContaier>
       </Wrapper>
       <AdPortfolio />
     </Container>

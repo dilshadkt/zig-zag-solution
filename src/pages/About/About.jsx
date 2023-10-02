@@ -8,7 +8,7 @@ const About = () => {
     <>
       <AboutUs />
       <MissionVison />
-      <AdPortfolio status={"aboutus"} />
+      <AdPortfolio />
     </>
   );
 };

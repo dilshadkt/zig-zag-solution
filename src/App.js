@@ -17,6 +17,9 @@ import Blog from "./components/blog/TenDigitalMarket";
 import Training from "./components/blog/Training";
 import Hunting from "./components/blog/Hunting";
 import Blogs from "./pages/Blogs/Blogs";
+import Unlocking from "./components/blog/Unlocking";
+import BestDigital from "./components/blog/BestDigital";
+import PowerOfPartners from "./components/blog/PowerOfPartners";
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
           <Route path="/blogs/best-digital" element={<Blog />} />
           <Route path="/blogs/training" element={<Training />} />
           <Route path="/blogs/hunting" element={<Hunting />} />
+          <Route path="/blogs/Unlocking" element={<Unlocking />} />
+          <Route path="/blogs/introduction" element={<BestDigital />} />
+          <Route path="/blogs/partnering" element={<PowerOfPartners />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service/media" element={<Media />} />
           <Route path="/service/seo" element={<Seo />} />

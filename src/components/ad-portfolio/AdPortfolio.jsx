@@ -12,7 +12,7 @@ const Wrappper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px ${(props) => props.status === "aboutus" && 12}%;
+  /* margin: 0px ${(props) => props.status === "aboutus" && 12}%; */
 `;
 const BoxContianer = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ const Image = styled.img`
   width: 100%;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
   transition: all 0.5s ease;
 `;
@@ -48,11 +48,11 @@ const ExploreMore = styled.span`
   color: red;
   cursor: pointer;
 `;
-const AdPortfolio = ({ status }) => {
+const AdPortfolio = () => {
   const filtered = Works.slice(0, 4);
   return (
     <Container>
-      <Wrappper status={status}>
+      <Wrappper>
         <BoxContianer>
           {filtered.map((item) => (
             <Box>

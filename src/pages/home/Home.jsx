@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Branding from "../../assets/digital-market-agencies-malappuram-log.png";
 import MoueScroll from "../../components/MoueScroll";
@@ -7,6 +7,7 @@ import Portfolio from "../../components/Portfolio";
 import Blogs from "../../components/Blogs";
 import Serivice from "../../components/Serivice";
 import WhyChoose from "../../components/WhyChoose";
+import Reviews from "../../components/Reviews/Reviews";
 
 const Container = styled.div`
   position: sticky;
@@ -85,6 +86,15 @@ const Description = styled.div`
 `;
 
 const Home = () => {
+  async function getReviews() {
+    const result = await fetch(
+      "https://static.elfsight.com/platform/platform.js"
+    );
+    console.log(result);
+  }
+  useEffect(() => {
+    getReviews();
+  }, []);
   return (
     <>
       <Container id="home">
@@ -114,12 +124,7 @@ const Home = () => {
       <Blogs />
       <Serivice />
       <Portfolio />
-      <script
-        src="https://static.elfsight.com/platform/platform.js"
-        data-use-service-core
-        defer
-      ></script>
-      <div className="elfsight-app-dd47a4de-64ef-4a6e-80a3-39f12ac7dad1"></div>
+      <Reviews />
     </>
   );
 };

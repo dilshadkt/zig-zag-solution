@@ -56,8 +56,8 @@ const AdPortfolio = ({ status }) => {
     <Container>
       <Wrappper status={status}>
         <BoxContianer>
-          {filtered.map((item) => (
-            <Box>
+          {filtered.map((item, index) => (
+            <Box key={index}>
               <Image src={item.image} />
             </Box>
           ))}

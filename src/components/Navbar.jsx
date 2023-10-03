@@ -10,7 +10,7 @@ import about from "../assets/nav-mobile/About Digital-Marketing-Malappuram.png";
 import service from "../assets/nav-mobile/services  Digital-Marketing-Malappuram.png";
 import works from "../assets/nav-mobile/works Digital-Marketing-Malappuram.png";
 import contact from "../assets/nav-mobile/contact Digital-Marketing-Malappuram.png";
-const Container = styled.div`
+const Container = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
@@ -160,7 +160,7 @@ const TItle = styled.p`
   font-size: 13px;
 `;
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(0);
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -202,65 +202,62 @@ const Navbar = () => {
                 About
               </Link>
             </Item>
-            <Item onMouseEnter={() => setIsOpen(true)}>
+            <Item onMouseEnter={() => setIsOpen(1)}>
               <Link style={{ textDecoration: "none", color: "inherit" }}>
                 Service
-                <ServiceOption
-                  status={isOpen}
-                  onMouseLeave={() => setIsOpen(false)}
-                >
-                  <ServiceItems>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/corperate"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        Corporate Branding
-                      </Link>{" "}
-                    </ServiceItem>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/social"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        Social Media Marketing
-                      </Link>{" "}
-                    </ServiceItem>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/seo"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        SEO
-                      </Link>{" "}
-                    </ServiceItem>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/webdev"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        Website Development
-                      </Link>{" "}
-                    </ServiceItem>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/performence"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        Performance Marketing
-                      </Link>
-                    </ServiceItem>
-                    <ServiceItem>
-                      <Link
-                        to={"/service/media"}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        Media Production
-                      </Link>
-                    </ServiceItem>
-                  </ServiceItems>
-                </ServiceOption>
               </Link>
+              <ServiceOption status={isOpen} onMouseLeave={() => setIsOpen(0)}>
+                <ServiceItems>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/corperate"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Corporate Branding
+                    </Link>{" "}
+                  </ServiceItem>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/social"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Social Media Marketing
+                    </Link>{" "}
+                  </ServiceItem>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/seo"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      SEO
+                    </Link>{" "}
+                  </ServiceItem>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/webdev"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Website Development
+                    </Link>{" "}
+                  </ServiceItem>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/performence"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Performance Marketing
+                    </Link>
+                  </ServiceItem>
+                  <ServiceItem>
+                    <Link
+                      to={"/service/media"}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Media Production
+                    </Link>
+                  </ServiceItem>
+                </ServiceItems>
+              </ServiceOption>
             </Item>
             <Item>
               <Link

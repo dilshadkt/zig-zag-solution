@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import contact from "../assets/contact/contact us digital marketing agency malappuram.png";
@@ -29,6 +29,7 @@ const ContactFormm = styled.form`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+  position: relative;
   width: 70%;
   height: 70%;
   padding: 20px;
@@ -82,7 +83,19 @@ const Button = styled.button`
     color: red;
   }
 `;
+const Response = styled.div`
+  display: ${(props) => (props.status ? "flex" : "none ")};
+  border: 1px solid green;
+  background-color: #cdf6cd;
+  padding: 5px 10px;
+  bottom: -20px;
+  position: absolute;
+  color: green;
+  font-weight: 500;
+  font-size: 20px;
+`;
 const Contact = () => {
+  const [isResponse, setIsResponse] = useState(0);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -97,12 +110,14 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsResponse(1);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <Contaienr>
       <Wrapper>
@@ -140,6 +155,7 @@ const Contact = () => {
             <TextArea name="message"></TextArea>
             <Button>Submit</Button>
           </ContactFormm>
+          <Response status={isResponse}>Thanks for your response</Response>
         </Right>
       </Wrapper>
     </Contaienr>

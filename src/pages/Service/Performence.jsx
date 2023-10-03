@@ -20,6 +20,7 @@ import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { Helmet } from "react-helmet";
 
 const Perform = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -30,6 +31,32 @@ const Perform = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          Best Digital Marketing Agency in Malappuram providing complete digital
+          marketing and branding services for brands across the globe.
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="Performance marketing, Online advertising, ROI-focused marketing, Digital advertising, Conversion optimization, Ad campaign management, Pay-per-click (PPC), Marketing analytics, Data-driven marketing, Results-driven marketing"
+        />
+        <meta
+          property="og:title"
+          content={"Grow Your Brand with Performance Marketing Expertise"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Maximize your online success with our performance marketing strategies. We specialize in ROI-focused digital advertising, conversion optimization, and data-driven marketing campaigns. Experience the power of results-driven marketing today."
+          }
+        />
+      </Helmet>
       <Wrapper>
         <HeaderImg src={Social} />
         <Header>Performance Marketing Service in Malappuram</Header>

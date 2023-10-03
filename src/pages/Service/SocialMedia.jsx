@@ -17,6 +17,7 @@ import { HeaderImg } from "../Service/Service";
 import { Content } from "../Service/Service";
 import { SubHeader } from "../Service/Service";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { Helmet } from "react-helmet";
 
 export const Image = styled.img`
   top: 0;
@@ -81,6 +82,34 @@ const SocialMedia = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          {
+            " Best Digital Marketing Agency in Malappuram providing complete digital marketing and branding services for brands across the globe."
+          }
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="Social media marketing, Social media agency, Malappuram, Digital marketing, Social media management, Social media advertising, Online presence, Brand promotion, Social media strategy, Social media campaigns, Social media experts"
+        />
+        <meta
+          property="og:title"
+          content={"Leading Social Media Marketing Agency in Malappuram"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Boost your brand's online presence with the top social media marketing agency in Malappuram. Our experts specialize in social media management, advertising, and strategic campaigns to promote your brand effectively. Partner with us for exceptional digital marketing results."
+          }
+        />
+      </Helmet>
+
       <Wrapper>
         <HeaderImg src={Social} />
         <Header>Social Media Marketing in Malappuram</Header>

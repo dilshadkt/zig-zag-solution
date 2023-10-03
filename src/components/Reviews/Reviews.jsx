@@ -30,7 +30,7 @@ const Reviews = () => {
   return (
     <Container>
       <Wrapper>
-        <div class="elfsight-app-0b7c6bb4-9949-4806-be11-16fd0d99a75c"></div>
+        <div className="elfsight-app-0b7c6bb4-9949-4806-be11-16fd0d99a75c"></div>
       </Wrapper>
       <Hider />
     </Container>

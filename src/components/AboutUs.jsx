@@ -3,6 +3,7 @@ import styled from "styled-components";
 import About from "../assets/about.png";
 import Aboutus from "../assets/About Us.png";
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Container = styled.div`
   position: relative;
@@ -106,6 +107,35 @@ const AboutUs = () => {
   return (
     <>
       <Container id="about">
+        <Helmet>
+          <title>
+            Zig Zag - Transforming Brands with Creative Digital Marketing
+            Solutions in Malappuram
+          </title>
+          <meta
+            name="description"
+            content={
+              "Join our extraordinary journey as the top digital marketing agency in Malappuram. Discover our passion and client-centric approach that turns visions into success."
+            }
+          />
+          <meta
+            name="keywords"
+            content="Digital Marketing, Malappuram, Creative Solutions, Business Growth, Brand Transformation, Global Services, Client-Centric Approach.
+"
+          />
+          <meta
+            property="og:title"
+            content={
+              "Zig Zag - Creative Digital Marketing Agency in Malappuram"
+            }
+          />
+          <meta
+            property="og:description"
+            content={
+              "Choose Zig Za as your dedicated digital marketing partner for transforming ideas into successful brands. We offer innovative digital marketing solutions that go beyond conventional methods."
+            }
+          />
+        </Helmet>
         <Wrapper padSize={status}>
           <Header>About Us</Header>
           <Bottom>

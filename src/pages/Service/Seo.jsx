@@ -22,6 +22,7 @@ import highlite from "../../assets/services/seo/High-Quality Content Creation.jp
 import LinkBuild from "../../assets/services/seo/High-Quality Content Creation.jpg";
 import performance from "../../assets/services/seo/Performance Tracking and Analytics.jpg";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { Helmet } from "react-helmet";
 
 const Seo = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -32,6 +33,36 @@ const Seo = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          {
+            "Best Digital Marketing Agency in Malappuram providing complete digital marketing and branding services for brands across the globe."
+          }
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="SEO agency, Malappuram, Search engine optimization, SEO services, Local SEO, Website optimization, SEO experts, Digital marketing, Online visibility, SEO strategies"
+        />
+        <meta
+          property="og:title"
+          content={
+            "Leading SEO Agency in Malappuram for Ranking On Top Of Google"
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "Improve your search engine ranking with the top SEO agency in Malappuram. Our SEO experts specialize in local SEO, website optimization, and proven SEO strategies to help your business rank higher on search engines and attract more online visitors."
+          }
+        />
+      </Helmet>
+
       <Wrapper>
         <HeaderImg src={seo} />
         <Header>SEO Services in Malappuram</Header>

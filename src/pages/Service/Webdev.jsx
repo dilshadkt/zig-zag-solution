@@ -20,6 +20,7 @@ import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { Helmet } from "react-helmet";
 
 const Webdev = () => {
   ///////////////////////////////////////
@@ -31,6 +32,35 @@ const Webdev = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          {
+            " Best Digital Marketing Agency in Malappuram providing complete digital marketing and branding services for brands across the globe."
+          }
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="Web development agency, Malappuram, Website development, Web design, Custom web development, Web development services, Responsive web design, E-commerce development, Website maintenance, Web development experts"
+        />
+        <meta
+          property="og:title"
+          content={
+            "Web Development Agency in Malappuram for High Converting Websites"
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "Discover excellence in web development with our agency in Malappuram. We specialize in custom website development, responsive web design, e-commerce solutions, and professional web maintenance services. Trust our web development experts to bring your online business to success."
+          }
+        />
+      </Helmet>
       <Wrapper>
         <HeaderImg src={webdev} />
         <Header>Website Development Services in Malappuram</Header>

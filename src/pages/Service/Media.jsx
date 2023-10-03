@@ -20,6 +20,7 @@ import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
 import { RightContainer } from "./SocialMedia";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
+import { Helmet } from "react-helmet";
 
 const Media = () => {
   const [content, setContent] = useState([datas[0]]);
@@ -30,6 +31,32 @@ const Media = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          Best Digital Marketing Agency in Malappuram providing complete digital
+          marketing and branding services for brands across the globe.
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="Media production agency, Malappuram, Video production, Creative content, Film production, Commercial production, Multimedia production, Production services, Content creation, Media experts"
+        />
+        <meta
+          property="og:title"
+          content={"Your Trusted Media Production Agency in Malappuram"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Build your brand authority with our media production agency in Malappuram. We specialise in video production, creative content, and multimedia services. Whether it's film production or commercial projects, rely on our experienced media experts for top-quality results."
+          }
+        />
+      </Helmet>
       <Wrapper>
         <HeaderImg src={Social} />
         <Header>Media Production Services in Malappuram</Header>

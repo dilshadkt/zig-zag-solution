@@ -11,6 +11,7 @@ import { data } from "../../assets/services/corperate/data";
 import { BottomContaier, RightContainer } from "./SocialMedia";
 import { Left } from "./SocialMedia";
 import { Right } from "./SocialMedia";
+import { Helmet } from "react-helmet";
 
 export const Container = styled.div`
   @media screen and (max-width: 768px) {
@@ -136,6 +137,36 @@ const Serivce = () => {
   }
   return (
     <Container>
+      <Helmet>
+        <title>
+          {
+            " Best Digital Marketing Agency in Malappuram providing complete digital marketing and branding services for brands across the globe"
+          }
+        </title>
+        <meta
+          name="description"
+          content={
+            " As your trusted digital marketing agency in malappuram, we provide corporate branding, seo, social media, paid ads, website development services for your brand. "
+          }
+        />
+        <meta
+          name="keywords"
+          content="Corporate branding, Brand identity, Brand strategy, Logo design, Visual identity, Branding agency, Brand guidelines, Brand image, Corporate image, Brand messaging, Brand recognition
+          "
+        />
+        <meta
+          property="og:title"
+          content={
+            "Elevate Your Business with Expert Corporate Branding Services"
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "Transform your business with our comprehensive corporate branding solutions. Our branding agency in malappuram specializes in creating a unique brand identity, logo design, and brand strategy that will set your company apart. Build a strong corporate image and brand recognition with our professional expertise."
+          }
+        />
+      </Helmet>
       <Wrapper>
         <HeaderImg src={Corperate}></HeaderImg>
         <Header>Best Corporate Branding Service in Malappuram</Header>

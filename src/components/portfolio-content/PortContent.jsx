@@ -44,14 +44,14 @@ const PortContent = () => {
   console.log(status);
   return (
     <Content>
-      {Works.map((item) =>
+      {Works.map((item, index) =>
         status === "all" ? (
-          <ImageContainer>
+          <ImageContainer key={index}>
             <Image src={item.image} />
           </ImageContainer>
         ) : (
           item.status === status && (
-            <ImageContainer>
+            <ImageContainer key={index}>
               <Image src={item.image} />
             </ImageContainer>
           )

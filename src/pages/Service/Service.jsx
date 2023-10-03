@@ -93,8 +93,8 @@ export const Box = styled.div`
 export const BoxItem = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 17px;
-    width: 30%;
-    min-width: 150px;
+    width: 43%;
+    min-width: 100px;
   }
   margin: 5px;
   cursor: pointer;

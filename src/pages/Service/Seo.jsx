@@ -19,7 +19,7 @@ import comprensive from "../../assets/services/seo/Comprehensive Website Audit.j
 import ketword from "../../assets/services/seo/Keyword Research and Strategy.jpeg";
 import onPage from "../../assets/services/seo/On-Page Optimization.jpg";
 import highlite from "../../assets/services/seo/High-Quality Content Creation.jpg";
-import LinkBuild from "../../assets/services/seo/High-Quality Content Creation.jpg";
+import LinkBuild from "../../assets/services/seo/Link Building.jpg";
 import performance from "../../assets/services/seo/Performance Tracking and Analytics.jpg";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 import { Helmet } from "react-helmet";

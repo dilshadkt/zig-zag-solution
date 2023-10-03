@@ -5,6 +5,7 @@ import Strategy from "../../assets/services/corperate/Brand Strategy.jpg";
 import Visual from "../../assets/services/corperate/Visual Identity.jpg";
 import Messaging from "../../assets/services/corperate/Brand Messaging.jpg";
 import Guidness from "../../assets/services/corperate/Brand Guidelines.png";
+import Consistancy from "../../assets/services/corperate/Brand Consistency.jpg";
 import Precense from "../../assets/services/corperate/Online Presence.jpg";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 import { data } from "../../assets/services/corperate/data";
@@ -206,7 +207,7 @@ const Serivce = () => {
                 Brand Messaging
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
-                <Image src={Strategy} />
+                <Image src={Consistancy} />
                 Online Presence
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>

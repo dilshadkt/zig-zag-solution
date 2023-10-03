@@ -4,7 +4,9 @@ import discover from "../../assets/services/webdev/Design and Development.jpg";
 import Creattion from "../../assets/services/webdev/Launch and Maintenance.jpg";
 import Community from "../../assets/services/webdev/Testing and Quality Assurance.jpg";
 import Advertisment from "../../assets/services/webdev/Content Integration.jpg";
-import Performence from "../../assets/services/webdev/Design and Development.jpg";
+import Performence from "../../assets/services/webdev/Website Development.jpg";
+import Maintenance from "../../assets/services/webdev/Discovery and Planning.jpg";
+import service from "../../assets/services/webdev/Website Development.jpg";
 import { datas } from "../../assets/services/webdev/Data";
 import { Container } from "./Service";
 import { Wrapper } from "./Service";
@@ -101,7 +103,7 @@ const Webdev = () => {
                 <Image src={Performence} /> Launch and Maintenance
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
-                <Image src={Performence} /> Launch and Maintenance
+                <Image src={Maintenance} /> Launch and Maintenance
               </BoxItem>
             </BoxContainer>
           </Left>
@@ -109,7 +111,7 @@ const Webdev = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={Performence} status="service" />
+                  <Image src={service} status="service" />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Social from "../../assets/services/media/Creative Conceptualization.jpg";
+import Social from "../../assets/services/media/Review and Feedback.jpg";
 import Planning from "../../assets/services/media/Diverse Content Formats.jpg";
 import Creattion from "../../assets/services/media/Final Delivery.jpg";
 import Community from "../../assets/services/media/High-Quality Production.jpg";
 import Advertisment from "../../assets/services/media/Media Production Services.jpg";
-import Performence from "../../assets/services/media/Review and Feedback.jpg";
+import Performence from "../../assets/services/media/Creative Conceptualization.jpg";
+import Story from "../../assets/services/media/Storytelling.jpeg";
 import { datas } from "../../assets/services/media/Data";
 import { Container } from "./Service";
 import { Wrapper } from "./Service";
@@ -97,7 +98,7 @@ const Media = () => {
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={Creattion} /> Storytelling
+                <Image src={Story} /> Storytelling
               </BoxItem>
             </BoxContainer>
           </Left>

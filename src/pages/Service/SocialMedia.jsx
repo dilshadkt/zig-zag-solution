@@ -6,6 +6,7 @@ import Creattion from "../../assets/services/socailmedia/Compelling Content Crea
 import Community from "../../assets/services/socailmedia/Community Engagement.jpg";
 import Advertisment from "../../assets/services/socailmedia/Targeted Advertising.jpg";
 import Performence from "../../assets/services/socailmedia/Performance Analytics.jpg";
+import Adaptation from "../../assets/services/socailmedia/Adaptation.jpg";
 import { datas } from "../../assets/services/socailmedia/Datas";
 import { Box } from "../Service/Service";
 import { BoxItem } from "../Service/Service";
@@ -158,7 +159,7 @@ const SocialMedia = () => {
                 <Image src={Performence} /> Performance Analytics
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
-                <Image src={Performence} /> Adaptation
+                <Image src={Adaptation} /> Adaptation
               </BoxItem>
             </BoxContainer>
           </Left>

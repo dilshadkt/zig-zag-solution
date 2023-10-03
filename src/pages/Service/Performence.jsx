@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Social from "../../assets/services/performence/Continuous Optimization.jpg";
 import Planning from "../../assets/services/performence/Conversion-Oriented Design.jpg";
-import Creattion from "../../assets/services/performence/Data-Driven Strategy.jpg";
 import Community from "../../assets/services/performence/Performance Marketing Service.jpg";
 import Performence from "../../assets/services/performence/Targeted Campaigns.jpg";
-import Advertisment from "../../assets/services/performence/Data-Driven Strategy.jpg";
+import Advertisment from "../../assets/services/performence/Multichannel Integration.jpg";
+import Testing from "../../assets/services/performence/A,B Testing.jpg";
+import Creattion from "../../assets/services/performence/Data-Driven Strategy.jpg";
 import { datas } from "../../assets/services/performence/Data";
 import { Container } from "./Service";
 import { Wrapper } from "./Service";
@@ -84,7 +85,7 @@ const Perform = () => {
                 Data-Driven Strategy
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={Creattion} /> Targeted Campaigns
+                <Image src={Social} /> Targeted Campaigns
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
                 <Image src={Community} />
@@ -102,7 +103,7 @@ const Perform = () => {
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={Planning} />
+                <Image src={Testing} />
                 A/B Testing
               </BoxItem>
             </BoxContainer>

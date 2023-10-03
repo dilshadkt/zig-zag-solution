@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 const Wrappper = styled.div`
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 768px) {
     padding: 20px;
+    margin: 0;
   }
   padding: 20px 70px;
   display: flex;

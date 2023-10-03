@@ -41,7 +41,7 @@ export const Header = styled.h1`
 `;
 export const Content = styled.span`
   @media screen and (max-width: 768px) {
-    font-size: 19px;
+    font-size: 18px;
   }
   line-height: 30px;
   font-size: 23px;

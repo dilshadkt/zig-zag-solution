@@ -8,20 +8,22 @@ const Container = styled.div`
   background-color: white;
 `;
 const Wrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
   z-index: 5;
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
 `;
 const Hider = styled.div`
   z-index: 10;
   position: absolute;
   width: 100%;
-  background-color: #ffffff;
-  height: 45px;
-  /* left: 43%; */
+  background-color: white;
+  height: 60px;
   bottom: 5px;
 `;
 const Reviews = () => {

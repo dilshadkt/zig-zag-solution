@@ -71,6 +71,7 @@ const Item = styled.li`
   }
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
 `;
 const NavItems = styled.ul`
   font-weight: 500;

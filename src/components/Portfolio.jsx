@@ -52,6 +52,7 @@ const ImageContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 45%;
     min-width: 140px;
+    max-width: 200px;
     min-height: 100px;
     height: 150px;
     border-radius: 10px;

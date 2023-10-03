@@ -77,6 +77,8 @@ const Head = styled.h3`
 `;
 const Desc = styled.span`
   @media screen and (max-width: 768px) {
+    font-size: 20px;
+    text-align: center;
     width: 100%;
   }
   font-size: 25px;

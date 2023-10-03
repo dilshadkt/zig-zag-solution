@@ -37,6 +37,7 @@ const Content = styled.span`
   @media screen and (max-width: 768px) {
     text-align: justify;
     width: 100%;
+    font-size: 18px;
   }
   width: 70%;
   text-align: ${(props) => (props.textAlign === "data" ? "justify" : "left")};

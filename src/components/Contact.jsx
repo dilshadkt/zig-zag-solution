@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import emailjs from "@emailjs/browser";
 import contact from "../assets/contact/contact us digital marketing agency malappuram.png";
 
 const Contaienr = styled.div``;
@@ -82,6 +83,26 @@ const Button = styled.button`
   }
 `;
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uyx61ym",
+        "template_tkujujl",
+        form.current,
+        "feYFFeEJ8N7t8b0ih"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <Contaienr>
       <Wrapper>
@@ -89,11 +110,15 @@ const Contact = () => {
           <Image src={contact} />
         </Left>
         <Right>
-          <ContactFormm>
-            <Field placeholder="Enter your name"></Field>
-            <Field placeholder="Enter your mobile number"></Field>
-            <Field type="email" placeholder="Enter your email id"></Field>
-            <SelectField>
+          <ContactFormm ref={form} onSubmit={sendEmail}>
+            <Field name="name" placeholder="Enter your name"></Field>
+            <Field name="number" placeholder="Enter your mobile number"></Field>
+            <Field
+              name="email"
+              type="email"
+              placeholder="Enter your email id"
+            ></Field>
+            <SelectField name="find-us">
               <Option>How did you find us?</Option>
               <Option>Instagram</Option>
               <Option>LinkedIn</Option>
@@ -102,7 +127,7 @@ const Contact = () => {
               <Option>Google search</Option>
               <Option>Other</Option>
             </SelectField>
-            <SelectField>
+            <SelectField name="enquiry">
               <Option>Enquiry on</Option>
               <Option>Full Digital Market Activity</Option>
               <Option>SEO</Option>
@@ -112,7 +137,7 @@ const Contact = () => {
               <Option>Website Development</Option>
               <Option>other</Option>
             </SelectField>
-            <TextArea></TextArea>
+            <TextArea name="message"></TextArea>
             <Button>Submit</Button>
           </ContactFormm>
         </Right>

@@ -17,6 +17,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex: 1;
+  position: relative;
 `;
 const Left = styled.div`
   flex: 1;
@@ -29,7 +30,7 @@ const ContactFormm = styled.form`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-  position: relative;
+
   width: 70%;
   height: 70%;
   padding: 20px;
@@ -84,11 +85,15 @@ const Button = styled.button`
   }
 `;
 const Response = styled.div`
+  @media only screen and (max-width: 768px) {
+    right: 10px;
+    bottom: 20px;
+  }
   display: ${(props) => (props.status ? "flex" : "none ")};
   border: 1px solid green;
   background-color: #cdf6cd;
   padding: 5px 10px;
-  bottom: -20px;
+  bottom: 0;
   position: absolute;
   color: green;
   font-weight: 500;
@@ -103,7 +108,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_uyx61ym",
-        "template_tkujujl",
+        "template_ojwv1hv",
         form.current,
         "feYFFeEJ8N7t8b0ih"
       )
@@ -154,8 +159,8 @@ const Contact = () => {
             </SelectField>
             <TextArea name="message"></TextArea>
             <Button>Submit</Button>
+            <Response status={isResponse}>Thanks for your response</Response>
           </ContactFormm>
-          <Response status={isResponse}>Thanks for your response</Response>
         </Right>
       </Wrapper>
     </Contaienr>

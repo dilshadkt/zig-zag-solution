@@ -298,7 +298,7 @@ const Navbar = () => {
           </ContactIcon>
         </Right>
       </Wrapper>
-      <Whatssap href="whatsapp://send?abid=9946443551&text=HI">
+      <Whatssap href="https://wa.me/9946443551?text=Hello ZigZag">
         <WhatsAppIcon />
       </Whatssap>
       <MobileNav>

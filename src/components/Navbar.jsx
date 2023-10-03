@@ -23,6 +23,9 @@ const Container = styled.nav`
     props.value ? "transparent" : " rgb(219, 0, 47)"};
 `;
 const Wrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    padding: 0px 20px;
+  }
   height: 100%;
   display: flex;
   padding: 0px 60px;

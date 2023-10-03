@@ -9,6 +9,7 @@ import { Items } from "./Hunting";
 import { Item } from "./Hunting";
 import { Conclusion } from "./Hunting";
 import BestDigitalImage from "../../assets/latesBlog/Malappuram Best  Digital Marketing Agency.jpg";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 const Highlight = styled.span`
@@ -189,6 +190,7 @@ const BestDigital = () => {
             achieve marketing success in the digital age.
           </Description>
         </Items>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

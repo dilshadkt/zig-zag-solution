@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
   }
+  margin: 0% ${(props) => props.status === "data" && 10}%;
   padding: 20px 100px;
   display: flex;
   flex-direction: column;
@@ -107,10 +108,10 @@ const Image = styled.img`
   height: 100%;
   object-fit: contain;
 `;
-const WhyChoose = () => {
+const WhyChoose = ({ status }) => {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper status={status}>
         <Header>Why Choose Us</Header>
         <Boxes>
           <Box>

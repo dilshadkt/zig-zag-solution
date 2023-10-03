@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bgimage from "../../assets/latesBlog/A Guide to Boosting Online Visibility for Digital Marketing Agency in Kerala.jpg";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -149,6 +150,7 @@ const Blog = () => {
             </Description>
           </Items>
         </Content>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

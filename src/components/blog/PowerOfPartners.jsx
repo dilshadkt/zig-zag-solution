@@ -10,6 +10,7 @@ import { Conclusion } from "./Hunting";
 import { Description } from "./Hunting";
 
 import PowerOfPartnerImage from "../../assets/latesBlog/top digital marketing Training center in Kerala.jpg";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 const PowerOfPartners = () => {
@@ -109,6 +110,7 @@ const PowerOfPartners = () => {
             competition in today’s dynamic business environment.
           </Description>
         </Items>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

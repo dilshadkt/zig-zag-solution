@@ -1,6 +1,7 @@
 import React from "react";
 import TrainingImg from "../../assets/latesBlog/Digital Marketing Agency Proven Strategies for Online Success.jpg";
 import styled from "styled-components";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 const Container = styled.div``;
 const Wrapper = styled.div`
   display: flex;
@@ -251,6 +252,7 @@ const Training = () => {
             to us – we’re here to assist you.
           </Description>
         </Content>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

@@ -143,6 +143,18 @@ const Media = styled.li`
   }
   margin-right: 7px;
 `;
+const Copyright = styled.div`
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+  }
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: rgb(119, 139, 174);
+`;
 const Footer = () => {
   return (
     <Container>
@@ -276,7 +288,9 @@ const Footer = () => {
           </Latest>
         </Right>
       </Wrapper>
-      {/* <Announcer /> */}
+      <Copyright>
+        © 2023 Zig Zag Digital Marketing Agency Manjeri. All rights reserved.
+      </Copyright>
     </Container>
   );
 };

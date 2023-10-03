@@ -9,6 +9,7 @@ import { Item } from "../blog/Hunting";
 import { Description } from "../blog/Hunting";
 import { Conclusion } from "../blog/Hunting";
 import UnloackingImage from "../../assets/latesBlog/How To Digital Marketing Agency Helps Businesses Stay Ahead.jpg";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 
@@ -111,6 +112,7 @@ const Unlocking = () => {
             landscape of Manjeri, Kerala.
           </Description>
         </Items>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

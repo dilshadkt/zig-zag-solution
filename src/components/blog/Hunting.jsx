@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HuntingImg from "../../assets/latesBlog/Digital Marketing Agency Expert Strategies for  Businesses.jpeg";
+import AdPortfolio from "../ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 export const Wrapper = styled.div`
@@ -213,6 +214,7 @@ const Hunting = () => {
             our package details or any doubt directly contact us
           </Description>
         </Content>
+        <AdPortfolio />
       </Wrapper>
     </Container>
   );

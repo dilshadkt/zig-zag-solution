@@ -50,11 +50,17 @@ const ExploreMore = styled.span`
   color: red;
   cursor: pointer;
 `;
+const Head = styled.h4`
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+`;
 const AdPortfolio = ({ status }) => {
   const filtered = Works.slice(0, 4);
   return (
     <Container>
       <Wrappper status={status}>
+        <Head>Our Recent Works</Head>
         <BoxContianer>
           {filtered.map((item, index) => (
             <Box key={index}>

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BlogsData } from "../../assets/latesBlog/LatesBlog";
 import { Link } from "react-router-dom";
+import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -109,6 +110,7 @@ const Blogs = () => {
             </Blog>
           ))}
         </Content>
+        <AdPortfolio status={"aboutus"} />
       </Wrapper>
     </Container>
   );

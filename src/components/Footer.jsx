@@ -13,6 +13,7 @@ const Container = styled.div`
   background-color: rgb(252, 250, 250);
 `;
 const Wrapper = styled.div`
+  position: relative;
   @media screen and (max-width: 768px) {
     padding: 20px;
     padding-bottom: 70px;
@@ -155,143 +156,324 @@ const Copyright = styled.div`
   margin-bottom: 10px;
   color: rgb(119, 139, 174);
 `;
+const FooterBoxContainer = styled.div`
+  background-color: #fff;
+  width: 100%;
+  height: 140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+const FooterBox = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    bottom: -10px;
+  }
+  display: flex;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  position: absolute;
+  z-index: 5;
+  width: 70%;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  bottom: -30px;
+`;
+const BoxLeft = styled.div`
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  padding: 15px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+
+  font-weight: 600;
+  flex: 1;
+`;
+const BoxRight = styled.div`
+  font-size: 18px;
+  font-size: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(119, 139, 174);
+  flex: 1;
+`;
+const GetFreConsultancy = styled.a`
+  @media screen and (max-width: 768px) {
+    color: black;
+    margin-top: 0;
+  }
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+
+  text-decoration: none;
+  cursor: pointer;
+  color: red;
+`;
+const BoxContent = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 const Footer = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Left>
-          <Logo src={logo} />
-          <Header>
-            We’re Ready to Grow With You. Talk to an Expert Today.
-          </Header>
-          <Bottom>
-            <Link
-              to={"/contact"}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+    <>
+      <FooterBoxContainer>
+        <FooterBox>
+          <BoxLeft>
+            Wish To Take Your Business<br></br> To The Next Level?
+          </BoxLeft>
+          <BoxRight>
+            <BoxContent>
               {" "}
-              <GetButton>GET IN TOUCH</GetButton>
-            </Link>
+              Create Compelling Online Presence & Drive Sales With<br></br> The
+              Best Digital Marketing Agency in Malappuram
+            </BoxContent>
 
-            <ContactInfo>
-              <Contact>CALL US NOW</Contact>
-              <Contact type="number"> +91 9946443551</Contact>
-            </ContactInfo>
-          </Bottom>
-          <Social>
-            <Media>
-              {" "}
-              <a
-                href="https://instagram.com/zig_zag_digital_solutions/"
-                target="blank"
-                style={{ color: "inherit", textDecoration: "none" }}
+            <GetFreConsultancy href="https://wa.me/9946443551?text=Hello ZigZag">
+              Get A Free Consultation
+            </GetFreConsultancy>
+          </BoxRight>
+        </FooterBox>
+      </FooterBoxContainer>
+      <Container>
+        <Wrapper>
+          <Left>
+            <Logo src={logo} />
+            <Header>
+              We’re Ready to Grow With You. Talk to an Expert Today.
+            </Header>
+            <Bottom>
+              <Link
+                to={"/contact"}
+                style={{ textDecoration: "none", color: "inherit" }}
               >
                 {" "}
-                <InstagramIcon />
-              </a>
-            </Media>
-            <Media>
-              <a
-                href="https://www.facebook.com/ZIGZAGDigitalSolutions/"
-                target="blank"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <FacebookOutlinedIcon />
-              </a>
-            </Media>
-            <Media>
-              <a
-                href="https://www.linkedin.com/company/zig-zag-digital-solution-s"
-                target="blank"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <LinkedInIcon />
-              </a>
-            </Media>
-            <Media>
-              {" "}
-              <TwitterIcon />
-            </Media>
-          </Social>
-        </Left>
-        <Right>
-          <Company>
-            <Head>Company</Head>
-            <BnnerLIst>
-              <Items>
-                <Link
-                  to={"/"}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Home
-                </Link>
-              </Items>
-              <Items>
-                <Link
-                  to={"/service/corperate"}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Service
-                </Link>
-              </Items>
-              <Items>
-                <Link
-                  to={"/portfolio"}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Portfolio
-                </Link>
-              </Items>
-              <Items>
-                <Link
-                  to={"/blogs"}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                <GetButton>GET IN TOUCH</GetButton>
+              </Link>
+
+              <ContactInfo>
+                <Contact>CALL US NOW</Contact>
+                <Contact type="number">
+                  {" "}
+                  <a
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    href="tel:123-456-7890"
+                  >
+                    +91 9946443551
+                  </a>
+                </Contact>
+              </ContactInfo>
+            </Bottom>
+            <Social>
+              <Media>
+                {" "}
+                <a
+                  href="https://instagram.com/zig_zag_digital_solutions/"
+                  target="blank"
+                  style={{ color: "inherit", textDecoration: "none" }}
                 >
                   {" "}
-                  Blog
-                </Link>
-              </Items>
-              <Items>Contact Us</Items>
-              <Items>
-                <Link
-                  to={"/about"}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  <InstagramIcon />
+                </a>
+              </Media>
+              <Media>
+                <a
+                  href="https://www.facebook.com/ZIGZAGDigitalSolutions/"
+                  target="blank"
+                  style={{ color: "inherit", textDecoration: "none" }}
                 >
+                  <FacebookOutlinedIcon />
+                </a>
+              </Media>
+              <Media>
+                <a
+                  href="https://www.linkedin.com/company/zig-zag-digital-solution-s"
+                  target="blank"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  <LinkedInIcon />
+                </a>
+              </Media>
+              <Media>
+                {" "}
+                <TwitterIcon />
+              </Media>
+            </Social>
+          </Left>
+          <Right>
+            <Company>
+              <Head>Company</Head>
+              <BnnerLIst>
+                <Items>
+                  <Link
+                    to={"/"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Home
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/service/corperate"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Service
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/portfolio"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Portfolio
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/blogs"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {" "}
+                    Blog
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/contact"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Contact Us
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/about/data"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {" "}
+                    About
+                  </Link>
+                </Items>
+              </BnnerLIst>
+            </Company>
+            <Services>
+              <Head>Services</Head>
+              <BnnerLIst>
+                <Items>
+                  <Link
+                    to={"/service/corperate"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Corporate identity
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/service/social"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Social Media Marketing
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/service/seo"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    SEO
+                  </Link>
+                </Items>
+                <Items>
                   {" "}
-                  About
-                </Link>
-              </Items>
-            </BnnerLIst>
-          </Company>
-          <Services>
-            <Head>Services</Head>
-            <BnnerLIst>
-              <Items>Corporate identity</Items>
-              <Items>UI/UX Design</Items>
-              <Items>Brand Promotion</Items>
-              <Items>Full Developement</Items>
-              <Items>Photo & Print</Items>
-            </BnnerLIst>
-          </Services>
-          <Latest>
-            <Head>Latest Articles</Head>
-            <BnnerLIst>
-              <Items>
-                are you tired of looking best digital marketing agency in
-                Kerala, don't worry we will be August 16, 2023
-              </Items>
-              <Items>
-                Introduction: In the vibrant business landscape of Manjeri,
-                Kerala, staying ahead in the
-              </Items>
-            </BnnerLIst>
-          </Latest>
-        </Right>
-      </Wrapper>
-      <Copyright>
-        © 2023 Zig Zag Digital Marketing Agency Manjeri. All rights reserved.
-      </Copyright>
-    </Container>
+                  <Link
+                    to={"/service/webdev"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {" "}
+                    Website Development
+                  </Link>
+                </Items>
+                <Items>
+                  {" "}
+                  <Link
+                    to={"/service/performence"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {" "}
+                    Performance Marketing
+                  </Link>
+                </Items>
+                <Items>
+                  {" "}
+                  <Link
+                    to={"/service/corperate"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {" "}
+                    Media Production
+                  </Link>
+                </Items>
+              </BnnerLIst>
+            </Services>
+            <Latest>
+              <Head>Latest Articles</Head>
+              <BnnerLIst>
+                <Items>
+                  <Link
+                    to={"/blogs/best-digital"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    we serve you the best digital 10 marketing agency in Kerala
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/blogs/training"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Searching for the top digital marketing Training center in
+                    Kerala? Look no further
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/blogs/hunting"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Are you Hunting for Malappuram’s Best Digital Marketing
+                    Agency?
+                  </Link>
+                </Items>
+                <Items>
+                  <Link
+                    to={"/blogs/Unlocking "}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Unlocking Organic Traffic: A Guide to Boosting Online
+                    Visibility for Zig Zag Digital Marketing Agency in Manjeri,
+                    Kerala
+                  </Link>
+                </Items>
+              </BnnerLIst>
+            </Latest>
+          </Right>
+        </Wrapper>
+        <Copyright>
+          © 2023 Zig Zag Digital Marketing Agency Manjeri. All rights reserved.
+        </Copyright>
+      </Container>
+    </>
   );
 };
 

@@ -145,6 +145,7 @@ const Serivice = () => {
                 <Item>Strategy Development</Item>
                 <Item>Design and Collateral Creation</Item>
                 <Item>Implementation</Item>
+                <Item>Visual Identity</Item>
               </List>
               <LearnMore>
                 <Link
@@ -278,7 +279,7 @@ const Serivice = () => {
               to={"/service/corperate"}
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              Exploar More
+              Explore More
             </Link>
           </ExploreBtn>
         </Bottom>

@@ -76,7 +76,7 @@ const Seo = () => {
           continues to improve your position on Google till you rank No.1 on
           Google!
         </Content>
-        <SubHeader>Why Social Media Marketing?</SubHeader>
+        <SubHeader>Why SEO Matters?</SubHeader>
         <BoxContainer>
           <Box>
             SEO is your gateway to being found on search engine result pages
@@ -94,7 +94,7 @@ const Seo = () => {
             service, or solution
           </Box>
         </BoxContainer>
-        <SubHeader>Our Social Media Marketing Approach</SubHeader>
+        <SubHeader>Our SEO Approach</SubHeader>
         <BottomContaier>
           <Left>
             <BoxContainer>

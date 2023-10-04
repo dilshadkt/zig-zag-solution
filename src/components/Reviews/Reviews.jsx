@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   /* width: 100%; */
 `;
 const Hider = styled.div`
-  z-index: 10;
+  z-index: 5;
   position: absolute;
   width: 100%;
   background-color: white;

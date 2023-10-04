@@ -23,6 +23,7 @@ const MissionLetf = styled.div`
   flex: 1;
 `;
 const MissionRight = styled.div`
+  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,10 +82,10 @@ const Desc = styled.span`
     text-align: center;
     width: 100%;
   }
-  font-size: 25px;
+  font-size: 20px;
   width: 60%;
   word-spacing: 0px;
-  text-align: left;
+  text-align: center;
 `;
 const MissionVison = () => {
   return (
@@ -104,7 +105,7 @@ const MissionVison = () => {
         </Mission>
         <Vission>
           <VissionRight>
-            <Head>Our Vission</Head>
+            <Head>Our Vision</Head>
             <Desc>
               To be a Global Digital Marketing Company and change the digital
               marketing realm beyond boundaries.

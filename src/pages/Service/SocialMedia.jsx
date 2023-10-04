@@ -124,17 +124,21 @@ const SocialMedia = () => {
         </Content>
         <SubHeader>Why Social Media Marketing?</SubHeader>
         <BoxContainer>
-          <Box>People use social media for various reasons</Box>
           <Box>
-            It is where your customers are. Unlike traditional marketing methods
+            Social media marketing is vital for brands due to its diverse user
+            engagement.
           </Box>
           <Box>
-            The ability to measure insights and performance accurately makes it
-            the best marketing.
+            It's where customers are and unlike traditional methods, it offers
+            personalized targeting for rapid growth.
           </Box>
           <Box>
-            Our Social media marketing enables your brand awareness, customer
-            engagement,
+            Accurate performance measurement makes it the best marketing method
+            for brands.
+          </Box>
+          <Box>
+            Our tailored social media strategies boost brand awareness,
+            engagement, and growth.,
           </Box>
         </BoxContainer>
         <SubHeader>Our Social Media Marketing Approach</SubHeader>

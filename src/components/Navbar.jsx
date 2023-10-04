@@ -181,7 +181,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <Container value={scrolled}>
+    <Container value={scrolled} onMouseLeave={() => setIsOpen(0)}>
       <Wrapper>
         <Left value={scrolled}>
           <Logo src={scrolled ? logo : logoimg} />

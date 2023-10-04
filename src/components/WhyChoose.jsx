@@ -13,6 +13,7 @@ import poke from "../assets/client-logo/poke.png";
 import white from "../assets/client-logo/white.png";
 import BIDON from "../assets/client-logo/Anekavarna---Logo..png";
 import skyblue from "../assets/client-logo/skyblue.png";
+import IndianHabibi from "../assets/client-logo/INDIAN HABIBI.png";
 
 const Container = styled.div`
   position: relative;
@@ -22,6 +23,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
+    margin: 0% ${(props) => props.status === "data" && 0}%;
   }
   margin: 0% ${(props) => props.status === "data" && 10}%;
   padding: 20px 100px;
@@ -74,6 +76,7 @@ const Description = styled.span`
   color: rgb(161, 124, 122);
 `;
 const ClinteLogo = styled.div`
+  margin-top: 25px;
   width: 100%;
   flex-wrap: wrap;
   display: flex;
@@ -108,11 +111,14 @@ const Image = styled.img`
   height: 100%;
   object-fit: contain;
 `;
+
 const WhyChoose = ({ status }) => {
   return (
     <Container>
       <Wrapper status={status}>
-        <Header>Why Choose Us</Header>
+        <Header>
+          Why Zig Zag As Your Trusted Digital Marketing Agency In Malappuram
+        </Header>
         <Boxes>
           <Box>
             <Icon src={Clientcentric} />
@@ -147,6 +153,8 @@ const WhyChoose = ({ status }) => {
             </Description>
           </Box>
         </Boxes>
+        <Header>Our Clientele</Header>
+
         <ClinteLogo>
           <LogoContaienr>
             <Image src={Anekavarna} />
@@ -176,7 +184,7 @@ const WhyChoose = ({ status }) => {
             <Image src={skyblue} />
           </LogoContaienr>
           <LogoContaienr>
-            <Image src={Anekavarna} />
+            <Image src={IndianHabibi} />
           </LogoContaienr>
         </ClinteLogo>
       </Wrapper>

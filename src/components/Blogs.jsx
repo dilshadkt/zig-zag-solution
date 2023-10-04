@@ -169,7 +169,7 @@ const Blogs = () => {
             style={{ textDecoration: "none", color: "inherit" }}
             to={"blogs"}
           >
-            Exploar More
+            Explore More
           </Link>
         </ExploreBtn>
       </Wrapper>

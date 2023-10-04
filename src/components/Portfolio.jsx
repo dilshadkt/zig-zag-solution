@@ -102,7 +102,7 @@ const Portfolio = () => {
             to={"portfolio"}
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            Exploar More
+            Explore More
           </Link>
         </ExploreBtn>
       </Wrapper>

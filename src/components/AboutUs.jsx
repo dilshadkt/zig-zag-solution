@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import About from "../assets/about.png";
 import Aboutus from "../assets/About Us.png";
@@ -29,7 +29,6 @@ const Image = styled.img`
   width: 50%;
 `;
 const Header = styled.h3`
-  /* padding-top: 30px; */
   font-weight: 500;
   color: grey;
   font-size: 27px;
@@ -40,6 +39,7 @@ const Content = styled.span`
     width: 100%;
     font-size: 18px;
   }
+  margin-bottom: 30px;
   width: 70%;
   text-align: ${(props) => (props.textAlign === "data" ? "justify" : "left")};
   line-height: 30px;
@@ -59,18 +59,23 @@ const Left = styled.div`
   flex: 1;
 `;
 const Right = styled.div`
-  @media screen and (max-width: 768px) {
-    align-items: center;
-  }
-  z-index: 5;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
+  z-index: 5;
 
   flex: 1;
 `;
+const RightContent = styled.div`
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
 const ReadButton = styled.div`
+  border-radius: 10px;
   @media screen and (max-width: 768px) {
     margin-top: 20px;
   }
@@ -101,8 +106,11 @@ const AboutBackground = styled.img`
   opacity: 40%;
 `;
 const AboutUs = () => {
+  const [more, setMore] = useState(0);
   const { status } = useParams();
-  console.log(status);
+  function RedMore(x) {
+    setMore(x);
+  }
 
   return (
     <>
@@ -143,84 +151,107 @@ const AboutUs = () => {
               <Image src={About} />
             </Left>
             <Right>
-              <BrandTalk>WE MAKE BRANDS TALK</BrandTalk>
-              <Content textAlign={status}>
-                {status === "data" ? (
-                  <>
-                    The story that leads us on the extraordinary journey of
-                    uplifting brands to new heights as their digital marketing
-                    company encompasses passion, perseverance and relentless
-                    pursuit of turning vision into success! We understood our
-                    collective strength after working together as a group of
-                    freelance digital marketers from different corners of the
-                    world. With the challenges we faced, the opportunities we
-                    seized and the lessons we learned, our determination was
-                    stronger than ever to build a digital marketing agency in
-                    Malappuram that provided global services to brands.
-                    <div>
-                      About Us The story that leads us on the extraordinary
-                      journey of uplifting brands to new heights as their
-                      digital marketing company encompasses passion,
-                      perseverance and relentless pursuit of turning vision into
-                      success! We understood our collective strength after
-                      working together as a group of freelance digital marketers
-                      from different corners of the world. With the challenges
-                      we faced, the opportunities we seized and the lessons we
-                      learned, our determination was stronger than ever to build
-                      a digital marketing agency in Malappuram that provided
-                      global services to brands. Our journey is a testament to
-                      what determination and unwavering commitment can lead us.
-                      Client Centric and Result-Oriented approach with
-                      Innovative and creative thinking helped us surpass the
-                      expectations of our esteemed clients each time. Rather
-                      than a digital marketing agency, we strive to be your
-                      business growth partner that helps you every step of the
-                      way with creative solutions and strategic brilliance till
-                      you achieve your goals.
-                    </div>
-                  </>
-                ) : (
-                  <>
+              <RightContent>
+                {/* <BrandTalk status={status}></BrandTalk> */}
+                <Content textAlign={status}>
+                  {status === "data" ? (
+                    <>
+                      The story that leads us on the extraordinary journey of
+                      uplifting brands to new heights as their digital marketing
+                      company encompasses passion, perseverance and relentless
+                      pursuit of turning vision into success! We understood our
+                      collective strength after working together as a group of
+                      freelance digital marketers from different corners of the
+                      world. With the challenges we faced, the opportunities we
+                      seized and the lessons we learned, our determination was
+                      stronger than ever to build a digital marketing agency in
+                      Malappuram that provided global services to brands. About
+                      Us The story that leads us on the extraordinary journey of
+                      uplifting brands to new heights as their digital marketing
+                      company encompasses passion, perseverance and relentless
+                      pursuit of turning vision into success! We understood our
+                      collective strength after working together as a group of
+                      freelance digital marketers from different corners of the
+                      world
+                      {more ? (
+                        <div>
+                          . With the challenges we faced, the opportunities we
+                          seized and the lessons we learned, our determination
+                          was stronger than ever to build a digital marketing
+                          agency in Malappuram that provided global services to
+                          brands. Our journey is a testament to what
+                          determination and unwavering commitment can lead us.
+                          Client Centric and Result-Oriented approach with
+                          Innovative and creative thinking helped us surpass the
+                          expectations of our esteemed clients each time. Rather
+                          than a digital marketing agency, we strive to be your
+                          business growth partner that helps you every step of
+                          the way with creative solutions and strategic
+                          brilliance till you achieve your goals.
+                        </div>
+                      ) : (
+                        <div
+                          style={{ color: "red", cursor: "pointer" }}
+                          onClick={() => RedMore(1)}
+                        >
+                          Read more...
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      At <Hight>Zig Zag</Hight>, we believe the “Road To Success
+                      Is Not A Straight One,” hence the name. As your trusted
+                      Digital Marketing Agency in Malappuram, we want to be the
+                      driving force that turns your business ideas and dreams
+                      into reality.
+                    </>
+                  )}
+                </Content>
+                <Content textAlign={status}>
+                  {status === "data" ? (
+                    <>
+                      {more ? (
+                        <>
+                          Zig zag is where creative minds meet, collaborate and
+                          flourish. They are the driving force behind our
+                          client’s success. From a one-person show, we have
+                          transformed ourselves into one of Malappuram's best
+                          digital marketing companies by bringing together ideas
+                          and creating success stories.
+                          <div
+                            style={{ color: "red", cursor: "pointer" }}
+                            onClick={() => RedMore(0)}
+                          >
+                            Read Less ^
+                          </div>
+                        </>
+                      ) : null}
+                    </>
+                  ) : (
+                    <>
+                      If you are looking for a digital marketing company for
+                      your business to take over the ever-evolving digital
+                      platforms and establish a compelling online presence, you
+                      have come to the right place. We provide comprehensive
+                      digital marketing and branding solutions that suit you
+                      best.
+                    </>
+                  )}
+                </Content>
+                {!status && (
+                  <Link
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    to={"/about/data"}
+                  >
                     {" "}
-                    At <Hight>Zig Zag</Hight>, we believe the “Road To Success
-                    Is Not A Straight One,” hence the name. As your trusted
-                    Digital Marketing Agency in Malappuram, we want to be the
-                    driving force that turns your business ideas and dreams into
-                    reality.
-                  </>
+                    <ReadButton>Read Our Story </ReadButton>
+                  </Link>
                 )}
-              </Content>
-              <Content textAlign={status}>
-                {status === "data" ? (
-                  <>
-                    Zig zag is where creative minds meet, collaborate and
-                    flourish. They are the driving force behind our client’s
-                    success. From a one-person show, we have transformed
-                    ourselves into one of Malappuram's best digital marketing
-                    companies by bringing together ideas and creating success
-                    stories.
-                  </>
-                ) : (
-                  <>
-                    If you are looking for a digital marketing company for your
-                    business to take over the ever-evolving digital platforms
-                    and establish a compelling online presence, you have come to
-                    the right place. We provide comprehensive digital marketing
-                    and branding solutions that suit you best.
-                  </>
-                )}
-              </Content>
-              {!status && (
-                <Link
-                  style={{ color: "inherit", textDecoration: "none" }}
-                  to={"/about/data"}
-                >
-                  {" "}
-                  <ReadButton>Read Our Story </ReadButton>
-                </Link>
-              )}
 
-              <AboutBackground src={Aboutus} />
+                <AboutBackground src={Aboutus} />
+              </RightContent>
             </Right>
           </Bottom>
         </Wrapper>

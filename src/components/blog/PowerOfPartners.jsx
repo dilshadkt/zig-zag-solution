@@ -17,7 +17,7 @@ const PowerOfPartners = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={PowerOfPartnerImage} />
+        <Image src={PowerOfPartnerImage} alt={PowerOfPartnerImage} />
         <Header>
           The Power Of Partnering With A Digital Marketing Agency: Unlocking
           Business Growth

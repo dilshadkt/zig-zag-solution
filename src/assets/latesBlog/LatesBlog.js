@@ -8,8 +8,8 @@ export const BlogsData = [
   {
     image: Blog1,
     api: "best-digital",
-    title: "we serve you the best digital 10 marketing agency in Kerala",
-    desc: " we serve you the best digital 10 marketing agency in Kerala No Comments are you tired of looking best digital marketing agency in Kerala, don’t worry we will be with you. We are sharing here the best 10 digital marketing agencies in Kerala",
+    title: "we serve you the best 10 digital  marketing agency in Kerala",
+    desc: " we serve you the best 10 digital  marketing agency in Kerala No Comments are you tired of looking best digital marketing agency in Kerala, don’t worry we will be with you. We are sharing here the best 10 digital marketing agencies in Kerala",
   },
   {
     image: Blog3,

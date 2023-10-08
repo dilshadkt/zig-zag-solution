@@ -66,7 +66,7 @@ const Training = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={TrainingImg} />
+        <Image src={TrainingImg} alt={Training} />
         <Header>
           Searching For The Top Digital Marketing Training Center In Kerala?
           Look No Further

@@ -44,8 +44,6 @@ const Header = styled.div`
     margin-top: 0px;
   }
   text-align: left;
-
-  margin-top: 7px;
   font-weight: 500;
   width: 75%;
   color: rgb(119, 139, 174);
@@ -71,11 +69,11 @@ const GetButton = styled.button`
 `;
 const Bottom = styled.div`
   @media screen and (max-width: 768px) {
+    margin-top: 10px;
     width: 100%;
-
     justify-content: flex-start;
   }
-  margin-top: 30px;
+  margin-top: 20px;
   align-items: center;
   display: flex;
 `;
@@ -153,7 +151,8 @@ const Copyright = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
+
   color: rgb(119, 139, 174);
 `;
 const FooterBoxContainer = styled.div`
@@ -169,6 +168,7 @@ const FooterBox = styled.div`
     flex-direction: column;
     width: 90%;
     bottom: -10px;
+    height: 110px;
   }
   display: flex;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
@@ -183,7 +183,7 @@ const FooterBox = styled.div`
 `;
 const BoxLeft = styled.div`
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 0;
   }
@@ -250,16 +250,14 @@ const Footer = () => {
         <Wrapper>
           <Left>
             <Logo src={logo} />
-            <Header>
-              We’re Ready to Grow With You. Talk to an Expert Today.
-            </Header>
+            <Header>Your Digital Crossroad to Success</Header>
             <Bottom>
               <Link
                 to={"/contact"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 {" "}
-                <GetButton>GET IN TOUCH</GetButton>
+                <GetButton>Start Here</GetButton>
               </Link>
 
               <ContactInfo>
@@ -268,7 +266,7 @@ const Footer = () => {
                   {" "}
                   <a
                     style={{ color: "inherit", textDecoration: "none" }}
-                    href="tel:123-456-7890"
+                    href="tel:+91 9946443551"
                   >
                     +91 9946443551
                   </a>
@@ -434,7 +432,7 @@ const Footer = () => {
                     to={"/blogs/best-digital"}
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    we serve you the best digital 10 marketing agency in Kerala
+                    we serve you the best 10 digital marketing agency in Kerala
                   </Link>
                 </Items>
                 <Items>

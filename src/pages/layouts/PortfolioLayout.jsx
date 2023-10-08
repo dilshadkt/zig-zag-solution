@@ -76,13 +76,6 @@ const PortfolioLayout = () => {
             </NavItems>
           </Navbar>
           <Outlet />
-          {/* <Content>
-            {Works.map((item) => (
-              <ImageContainer>
-                <Image src={item.image} />
-              </ImageContainer>
-            ))}
-          </Content> */}
         </Wrapper>
       </Container>
     </>

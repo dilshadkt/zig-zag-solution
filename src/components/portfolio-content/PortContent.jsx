@@ -41,18 +41,17 @@ const ImageContainer = styled.div`
 const PortContent = () => {
   let { status } = useParams();
   status === undefined && (status = "all");
-  console.log(status);
   return (
     <Content>
       {Works.map((item, index) =>
         status === "all" ? (
           <ImageContainer key={index}>
-            <Image src={item.image} />
+            <Image src={item.image} alt={item.image} />
           </ImageContainer>
         ) : (
           item.status === status && (
             <ImageContainer key={index}>
-              <Image src={item.image} />
+              <Image src={item.image} alt={item.image} />
             </ImageContainer>
           )
         )

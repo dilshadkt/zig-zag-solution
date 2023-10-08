@@ -27,7 +27,6 @@ const Perform = () => {
   const [content, setContent] = useState([datas[0]]);
   function changeThem(id) {
     const result = datas.filter((item) => item.id === id);
-    console.log(result);
     setContent(result);
   }
   return (
@@ -59,7 +58,7 @@ const Perform = () => {
         />
       </Helmet>
       <Wrapper>
-        <HeaderImg src={Social} />
+        <HeaderImg src={Social} alt={Social} />
         <Header>Performance Marketing Service in Malappuram</Header>
         <Content>
           We turn data into action and strategies into success. As a growing
@@ -81,29 +80,29 @@ const Perform = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={Planning} />
+                <Image src={Planning} alt={Social} />
                 Data-Driven Strategy
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={Social} /> Targeted Campaigns
+                <Image src={Social} alt={Social} /> Targeted Campaigns
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
-                <Image src={Community} />
+                <Image src={Community} alt={Community} />
                 Conversion-Oriented Design
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
                 {" "}
-                <Image src={Advertisment} />
+                <Image src={Advertisment} alt={Advertisment} />
                 Continuous Optimization
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
                 {" "}
-                <Image src={Creattion} />
+                <Image src={Creattion} alt={Creattion} />
                 Multichannel Integration
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={Testing} />
+                <Image src={Testing} alt={Testing} />
                 A/B Testing
               </BoxItem>
             </BoxContainer>
@@ -112,7 +111,7 @@ const Perform = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={Performence} status="service" />
+                  <Image src={Performence} status="service" alt={Performence} />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

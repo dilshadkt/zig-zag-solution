@@ -32,6 +32,9 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 const Header = styled.div`
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
   padding-top: 30px;
   font-weight: 500;
   color: grey;
@@ -102,9 +105,8 @@ const Image = styled.img`
   background-color: rgb(252, 250, 250);
   opacity: 85%;
   &:hover {
-    background-color: rgb(248, 232, 232);
     opacity: 100%;
-    transform: scale(1.08);
+    transform: scale(1.05);
   }
   transition: all 0.5s ease;
   width: 100%;

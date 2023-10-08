@@ -20,7 +20,7 @@ const BestDigital = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={BestDigitalImage} />
+        <Image src={BestDigitalImage} alt={BestDigitalImage} />
         <Header>
           Digital Marketing Vs. Traditional Marketing: The Ultimate Face-Off
         </Header>

@@ -58,7 +58,7 @@ const Blog = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={bgimage} />
+        <Image src={bgimage} alt={bgimage} />
         <Header>
           We Serve You The Best Digital 10 Marketing Agency In Kerala
         </Header>

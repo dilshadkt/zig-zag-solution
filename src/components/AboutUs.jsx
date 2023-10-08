@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  padding: 0px ${(props) => (props.padSize === "data" ? 20 : 70)}px;
+  padding: 0px ${(props) => (props.status === "data" ? 20 : 70)}px;
   padding-bottom: 20px;
   position: relative;
 `;
@@ -41,7 +41,7 @@ const Content = styled.span`
   }
   margin-bottom: 30px;
   width: 70%;
-  text-align: ${(props) => (props.textAlign === "data" ? "justify" : "left")};
+  text-align: ${(props) => (props.status === "data" ? "justify" : "left")};
   line-height: 30px;
   font-size: 20px;
 `;
@@ -144,42 +144,44 @@ const AboutUs = () => {
             }
           />
         </Helmet>
-        <Wrapper padSize={status}>
+        <Wrapper status={status}>
           <Header>About Us</Header>
           <Bottom>
             <Left>
-              <Image src={About} />
+              <Image src={About} alt={About} />
             </Left>
             <Right>
               <RightContent>
                 {/* <BrandTalk status={status}></BrandTalk> */}
-                <Content textAlign={status}>
+                <Content status={status}>
                   {status === "data" ? (
                     <>
                       The story that leads us on the extraordinary journey of
                       uplifting brands to new heights as their digital marketing
                       company encompasses passion, perseverance and relentless
-                      pursuit of turning vision into success! We understood our
-                      collective strength after working together as a group of
-                      freelance digital marketers from different corners of the
-                      world. With the challenges we faced, the opportunities we
-                      seized and the lessons we learned, our determination was
-                      stronger than ever to build a digital marketing agency in
-                      Malappuram that provided global services to brands. About
-                      Us The story that leads us on the extraordinary journey of
-                      uplifting brands to new heights as their digital marketing
-                      company encompasses passion, perseverance and relentless
-                      pursuit of turning vision into success! We understood our
-                      collective strength after working together as a group of
-                      freelance digital marketers from different corners of the
-                      world
+                      pursuit of turning vision into success! <br /> <br />
+                      We understood our collective strength after working
+                      together as a group of freelance digital marketers from
+                      different corners of the world. <br /> <br />
+                      With the challenges we faced, the opportunities we seized
+                      and the lessons we learned, our determination was stronger
+                      than ever to build a digital marketing agency in
+                      Malappuram that provided global services to brands.
+                      <br /> <br /> About Us The story that leads us on the
+                      extraordinary journey of uplifting brands to new heights
+                      as their digital marketing company encompasses passion,
+                      perseverance and relentless pursuit of turning vision into
+                      success! We understood our collective strength after
+                      working together as a group of freelance digital marketers
+                      from different corners of the world
                       {more ? (
                         <div>
-                          . With the challenges we faced, the opportunities we
+                          With the challenges we faced, the opportunities we
                           seized and the lessons we learned, our determination
                           was stronger than ever to build a digital marketing
                           agency in Malappuram that provided global services to
-                          brands. Our journey is a testament to what
+                          brands. <br />
+                          <br /> Our journey is a testament to what
                           determination and unwavering commitment can lead us.
                           Client Centric and Result-Oriented approach with
                           Innovative and creative thinking helped us surpass the
@@ -209,7 +211,7 @@ const AboutUs = () => {
                     </>
                   )}
                 </Content>
-                <Content textAlign={status}>
+                <Content n={status}>
                   {status === "data" ? (
                     <>
                       {more ? (
@@ -220,6 +222,14 @@ const AboutUs = () => {
                           transformed ourselves into one of Malappuram's best
                           digital marketing companies by bringing together ideas
                           and creating success stories.
+                          <br />
+                          <br />
+                          If you wish the results to speak for your business as
+                          it did for us, partner with us!
+                          <br />
+                          <br />
+                          Let’s mark your presence in the digital world the Zig
+                          Zag way!
                           <div
                             style={{ color: "red", cursor: "pointer" }}
                             onClick={() => RedMore(0)}
@@ -250,7 +260,7 @@ const AboutUs = () => {
                   </Link>
                 )}
 
-                <AboutBackground src={Aboutus} />
+                <AboutBackground src={Aboutus} alt={Aboutus} />
               </RightContent>
             </Right>
           </Bottom>

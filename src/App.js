@@ -20,6 +20,7 @@ import Blogs from "./pages/Blogs/Blogs";
 import Unlocking from "./components/blog/Unlocking";
 import BestDigital from "./components/blog/BestDigital";
 import PowerOfPartners from "./components/blog/PowerOfPartners";
+import Serivice from "./components/Serivice";
 
 function App() {
   return (
@@ -32,8 +33,8 @@ function App() {
             <Route index element={<PortContent />} />
             <Route path="/portfolio/:status" element={<PortContent />} />
           </Route>
-          {/* <Route path="/blogs" element={<Blogs />} /> */}
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/service/:id" element={<Serivice />} />
           <Route path="/blogs/best-digital" element={<Blog />} />
           <Route path="/blogs/training" element={<Training />} />
           <Route path="/blogs/hunting" element={<Hunting />} />

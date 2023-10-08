@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Works } from "../../assets/data/Works";
+import { Works } from "../../assets/Works/Works";
 import { Link } from "react-router-dom";
 
 const Container = styled.div``;
@@ -15,6 +15,7 @@ const Wrappper = styled.div`
   align-items: center;
 
   margin: 0px ${(props) => props.status === "aboutus" && 12}%;
+  margin: 0px ${(props) => props.status === "service" && 10}%;
 `;
 const BoxContianer = styled.div`
   display: flex;
@@ -64,7 +65,7 @@ const AdPortfolio = ({ status }) => {
         <BoxContianer>
           {filtered.map((item, index) => (
             <Box key={index}>
-              <Image src={item.image} />
+              <Image src={item.image} alt={item.image} />
             </Box>
           ))}
         </BoxContianer>

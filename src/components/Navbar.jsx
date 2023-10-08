@@ -205,8 +205,14 @@ const Navbar = () => {
                 About
               </Link>
             </Item>
-            <Item onMouseEnter={() => setIsOpen(1)}>
-              <Link style={{ textDecoration: "none", color: "inherit" }}>
+            <Item
+              onMouseEnter={() => setIsOpen(1)}
+              onMouseLeave={() => setIsOpen(0)}
+            >
+              <Link
+                to={"/service/home"}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 Service
               </Link>
               <ServiceOption status={isOpen} onMouseLeave={() => setIsOpen(0)}>
@@ -307,20 +313,6 @@ const Navbar = () => {
       <MobileNav>
         <NavBar>
           <Box>
-            <Link
-              to={"/"}
-              style={{
-                textDecoration: "none",
-                color: "inherit",
-                textAlign: "center",
-              }}
-            >
-              <Icon src={home} />
-
-              <TItle> Home</TItle>
-            </Link>
-          </Box>
-          <Box>
             {" "}
             <Link
               to={"about/data"}
@@ -345,6 +337,20 @@ const Navbar = () => {
             >
               <Icon src={service} />
               <TItle>Service</TItle>
+            </Link>
+          </Box>
+          <Box>
+            <Link
+              to={"/"}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                textAlign: "center",
+              }}
+            >
+              <Icon src={home} />
+
+              <TItle> Home</TItle>
             </Link>
           </Box>
           <Box>

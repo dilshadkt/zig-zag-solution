@@ -28,7 +28,6 @@ const Seo = () => {
   const [content, setContent] = useState([datas[0]]);
   function changeThem(id) {
     const result = datas.filter((item) => item.id === id);
-    console.log(result);
     setContent(result);
   }
   return (
@@ -64,7 +63,7 @@ const Seo = () => {
       </Helmet>
 
       <Wrapper>
-        <HeaderImg src={seo} />
+        <HeaderImg src={seo} alt={seo} />
         <Header>SEO Services in Malappuram</Header>
         <Content>
           As a prominent digital marketing company rooted in Malappuram, we
@@ -99,27 +98,29 @@ const Seo = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={comprensive} />
+                <Image src={comprensive} alt={comprensive} />
                 Comprehensive Website Audit
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={ketword} /> Keyword Research and Strategy
+                <Image src={ketword} alt={ketword} /> Keyword Research and
+                Strategy
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
-                <Image src={onPage} /> On-Page Optimization
+                <Image src={onPage} alt={onPage} /> On-Page Optimization
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
                 {" "}
-                <Image src={highlite} />
+                <Image src={highlite} alt={highlite} />
                 High-Quality Content Creation
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
                 {" "}
-                <Image src={LinkBuild} /> Link Building
+                <Image src={LinkBuild} alt={LinkBuild} /> Link Building
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
                 {" "}
-                <Image src={performance} /> Performance Tracking and Analytics
+                <Image src={performance} alt={performance} /> Performance
+                Tracking and Analytics
               </BoxItem>
             </BoxContainer>
           </Left>
@@ -127,7 +128,7 @@ const Seo = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={comprensive} status="service" />
+                  <Image src={comprensive} alt={comprensive} />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

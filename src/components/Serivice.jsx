@@ -7,7 +7,8 @@ import Websitedev from "../assets/Website-Development-Digital-Marketing-Malappur
 import performence from "../assets/Performance-Marketing-Digital-Marketing-Malappuram.gif";
 import mediaprod from "../assets/Media-Production-Digital-Marketing-Malappuram.gif";
 import services from "../assets/services.png";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import AdPortfolio from "./ad-portfolio/AdPortfolio";
 const Container = styled.div`
   overflow: hidden;
   position: relative;
@@ -128,6 +129,8 @@ const ExploreBtn = styled.div`
   }
 `;
 const Serivice = () => {
+  const { id } = useParams();
+
   return (
     <Container id="service">
       <Wrapper>
@@ -285,6 +288,7 @@ const Serivice = () => {
         </Bottom>
       </Wrapper>
       <SerivesBg src={services} />
+      {id === "home" && <AdPortfolio status={"service"} />}
     </Container>
   );
 };

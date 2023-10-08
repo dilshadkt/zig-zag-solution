@@ -93,7 +93,7 @@ const MissionVison = () => {
       <Wrapper>
         <Mission>
           <MissionLetf>
-            <Logo src={Vision} />
+            <Logo src={Vision} alt={Vision} />
           </MissionLetf>
           <MissionRight>
             <Head>Our Mission</Head>
@@ -112,7 +112,7 @@ const MissionVison = () => {
             </Desc>
           </VissionRight>
           <VissionLeft>
-            <Logo src={Missionbg} />
+            <Logo src={Missionbg} alt={Mission} />
           </VissionLeft>
         </Vission>
       </Wrapper>

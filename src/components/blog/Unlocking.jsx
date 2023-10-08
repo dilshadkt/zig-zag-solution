@@ -17,7 +17,7 @@ const Unlocking = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={UnloackingImage} />
+        <Image src={UnloackingImage} alt={UnloackingImage} />
         <Header>
           Unlocking Organic Traffic: A Guide To Boosting Online Visibility For
           Zig Zag Digital Marketing Agency In Manjeri, Kerala

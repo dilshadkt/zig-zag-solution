@@ -5,6 +5,7 @@ import contact from "../assets/contact/contact us digital marketing agency malap
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import WifiCalling3OutlinedIcon from "@mui/icons-material/WifiCalling3Outlined";
+import { Header } from "../pages/Service/Service";
 
 const Contaienr = styled.div``;
 const Wrapper = styled.div`
@@ -36,25 +37,28 @@ const ContactFormm = styled.form`
   }
 
   width: 70%;
-  height: 70%;
+  height: 75%;
   padding: 20px;
-  background-color: rgb(237, 127, 127);
+  /* background-color: rgb(237, 127, 127); */
 
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 `;
 const Field = styled.input`
-  border: none;
+  @media only screen and (max-width: 768px) {
+    width: 93%;
+  }
+  border: 1px solid #ffcccb;
   padding-left: 20px;
   font-size: 17px;
   margin: 10px 0px;
   width: 95%;
-  height: 45px;
-  border-radius: 10px;
+  height: 50px;
+  border-radius: 5px;
 `;
 const SelectField = styled.select`
-  border: none;
+  border: 1px solid #ffcccb;
   padding-left: 20px;
   ///////
   -webkit-appearance: none;
@@ -63,19 +67,22 @@ const SelectField = styled.select`
   appearance: none;
   font-size: 17px;
   width: 100%;
-  height: 45px;
+  height: 50px;
   margin: 10px 0px;
-  border-radius: 10px;
+  border-radius: 5px;
 `;
 const Option = styled.option``;
 const TextArea = styled.textarea`
+  @media only screen and (max-width: 768px) {
+    width: 95%;
+  }
   /* max-width: 98%; */
   padding: 6px;
   font-size: 17px;
-  border: none;
-  width: 99%;
+  border: 1px solid #ffcccb;
+  width: 98%;
   height: 70px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px 0px;
   resize: none;
 `;
@@ -84,6 +91,7 @@ const Button = styled.button`
   padding: 15px 20px;
   width: 80px;
   border: none;
+  background-color: #ffcccb;
   border-radius: 10px;
   &:hover {
     transform: scale(1.07);
@@ -98,25 +106,55 @@ const Top = styled.div`
   display: flex;
 `;
 
-const ContactItems = styled.ul`
-  color: rgb(119, 139, 174);
-  list-style: none;
-`;
-const ContactItem = styled.li`
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  margin: 10px 0px;
-`;
 const Bottom = styled.div`
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     padding: 20px;
   }
 `;
+const BoxContainer = styled.div`
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 0;
+  }
+  margin: 0% 10%;
+  display: flex;
+`;
+const Box = styled.div`
+  @media only screen and (max-width: 768px) {
+    padding: 30px 20px;
+    margin: 5px;
+  }
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid #dedede;
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+const Tittle = styled.h4`
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  color: #6d6d6d;
+`;
 const Response = styled.span`
   color: green;
   font-size: 18px;
+  font-weight: 500;
+`;
+const SubHeader = styled.span`
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
+  margin-top: 15px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  color: rgb(119, 139, 174);
   font-weight: 500;
 `;
 const Contact = () => {
@@ -146,9 +184,14 @@ const Contact = () => {
   return (
     <Contaienr>
       <Wrapper>
+        <Header>Contact</Header>
+        <SubHeader>
+          Please fill in the below form and wait for one of our experts to get
+          back you
+        </SubHeader>
         <Top>
           <Left>
-            <Image src={contact} />
+            <Image src={contact} alt={contact} />
           </Left>
           <Right>
             <ContactFormm ref={form} onSubmit={sendEmail}>
@@ -200,21 +243,29 @@ const Contact = () => {
           </Right>
         </Top>
         <Bottom>
-          <ContactItems>
-            <ContactItem>
-              <LocationOnOutlinedIcon style={{ marginRight: "10px" }} />
-              THAR PLAZA, KACHERIPADI - PANDIKKAD RD BYPASS, MANJERI, KERALA
-              676121
-            </ContactItem>
-            <ContactItem>
-              <MailOutlineIcon style={{ marginRight: "10px" }} />
-              zigzagmpm@gmail.com
-            </ContactItem>
-            <ContactItem>
-              <WifiCalling3OutlinedIcon style={{ marginRight: "10px" }} />
-              +91 994-644-3551
-            </ContactItem>
-          </ContactItems>
+          <BoxContainer>
+            <Box>
+              <LocationOnOutlinedIcon
+                style={{ color: "tomato", fontSize: "59px" }}
+              />
+              <Tittle>
+                {" "}
+                THAR PLAZA, KACHERIPADI - PANDIKKAD RD BYPASS, MANJERI, KERALA
+                676121
+              </Tittle>
+            </Box>
+            <Box>
+              <MailOutlineIcon style={{ color: "tomato", fontSize: "59px" }} />
+              <Tittle> zigzagmpm@gmail.com</Tittle>
+            </Box>
+            <Box>
+              {" "}
+              <WifiCalling3OutlinedIcon
+                style={{ color: "tomato", fontSize: "59px" }}
+              />
+              <Tittle> +91 994-644-3551</Tittle>
+            </Box>
+          </BoxContainer>
         </Bottom>
       </Wrapper>
     </Contaienr>

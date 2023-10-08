@@ -29,7 +29,6 @@ const Webdev = () => {
   const [content, setContent] = useState([datas[0]]);
   function changeThem(id) {
     const result = datas.filter((item) => item.id === id);
-    console.log(result);
     setContent(result);
   }
   return (
@@ -64,7 +63,7 @@ const Webdev = () => {
         />
       </Helmet>
       <Wrapper>
-        <HeaderImg src={webdev} />
+        <HeaderImg src={webdev} alt={webdev} />
         <Header>Website Development Services in Malappuram</Header>
         <Content>
           A website is a visual representation of your brand online. It should
@@ -83,27 +82,29 @@ const Webdev = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={discover} />
+                <Image src={discover} alt={discover} />
                 Discovery and Planning
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={Creattion} />
+                <Image src={Creattion} alt={Creattion} />
                 Design and Development
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
-                <Image src={Community} /> Content Integration
+                <Image src={Community} alt={Community} /> Content Integration
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
                 {" "}
-                <Image src={Advertisment} />
+                <Image src={Advertisment} alt={Advertisment} />
                 Testing and Quality Assurance
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
                 {" "}
-                <Image src={Performence} /> Launch and Maintenance
+                <Image src={Performence} alt={Performence} /> Launch and
+                Maintenance
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
-                <Image src={Maintenance} /> Launch and Maintenance
+                <Image src={Maintenance} alt={Maintenance} /> Launch and
+                Maintenance
               </BoxItem>
             </BoxContainer>
           </Left>
@@ -111,7 +112,7 @@ const Webdev = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={service} status="service" />
+                  <Image src={service} status="service" alt={service} />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

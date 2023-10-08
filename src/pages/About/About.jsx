@@ -4,6 +4,7 @@ import MissionVison from "../../components/MissionVison";
 import AdPortfolio from "../../components/ad-portfolio/AdPortfolio";
 import { useParams } from "react-router-dom";
 import WhyChoose from "../../components/WhyChoose";
+import OurExperts from "../../components/Our-experts/OurExperts";
 
 const About = () => {
   const { status } = useParams();
@@ -12,6 +13,7 @@ const About = () => {
     <>
       <AboutUs />
       <MissionVison />
+      <OurExperts />
       {status === "data" && <WhyChoose status={status} />}
       <AdPortfolio status="aboutus" />
     </>

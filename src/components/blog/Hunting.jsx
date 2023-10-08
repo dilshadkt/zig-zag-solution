@@ -63,7 +63,7 @@ const Hunting = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={HuntingImg} />
+        <Image src={HuntingImg} alt={Hunting} />
         <Header>
           Are You Hunting For Malappuram’s Best Digital Marketing Agency?
         </Header>

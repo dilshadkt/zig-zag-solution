@@ -45,7 +45,8 @@ const Content = styled.div`
 const BLog = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
-    min-width: 100%;
+    width: 100%;
+    max-width: 320px;
   }
   /* height: 270px; */
   flex: 1;
@@ -112,7 +113,7 @@ const Blogs = () => {
               </ImgaeContainer>
 
               <Content>
-                we serve you the best digital 10 marketing agency in Kerala
+                we serve you the best 10 digital marketing agency in Kerala
               </Content>
             </Link>
           </BLog>

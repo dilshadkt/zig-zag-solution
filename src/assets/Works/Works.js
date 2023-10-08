@@ -1,75 +1,94 @@
+import bidenCycle from "./IMG-20231008-WA0009.jpg";
+import skyblue from "./IMG-20231008-WA0010.jpg";
+import kayil from "./IMG-20231008-WA0011.jpg";
+import biden from "./IMG-20231008-WA0012.jpg";
+import Liyak from "./IMG-20231008-WA0013.jpg";
+import digital from "./IMG-20231008-WA0014.jpg";
+import bidonManjeri from "./IMG-20231008-WA0019.jpg";
+import digital2 from "./IMG-20231008-WA0020.jpg";
+import bicycle from "./IMG-20231008-WA0021.jpg";
+import Liyakdigital from "./IMG-20231008-WA0022.jpg";
+import bidenCycle2 from "./IMG-20231008-WA0025.jpg";
+import bidenCycle3 from "./IMG-20231008-WA0024.jpg";
+import bidenCycle4 from "./IMG-20231008-WA0028.jpg";
+import bidenCycle5 from "./IMG-20231008-WA0026.jpg";
+import bidenCycle6 from "./IMG-20231008-WA0027.jpg";
+
 export const Works = [
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/bidon-bicycle-mall-june-5.jpg",
+    image: bidenCycle,
     category: "pinned",
     status: "social",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/sky-blue-sharafiya-opening-soon.jpg",
+    image: skyblue,
     category: "pinned",
     status: "social",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Kayil5.jpg",
+    image: kayil,
     category: "pinned",
     status: "social",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Bidon_-430x430.jpg",
+    image: biden,
     category: "pinned",
     status: "social",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Liyak-aug-15.jpg",
+    image: Liyak,
     category: "pinned",
     status: "social",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/digital-marketing-agency-manjeri-430x430.jpg",
+    image: digital,
     category: "pinned",
     status: "brand",
   },
 
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Liyak-aug-15.jpg",
+    image: bidonManjeri,
     category: "not",
     status: "brand",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/digital-marketing-agency-manjeri-430x430.jpg",
+    image: digital2,
     category: "not",
     status: "brand",
   },
 
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/bidon-bicycle-mall-zigzag-digital-marketing-agency.jpg",
+    image: bicycle,
     category: "not",
     status: "brand",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Bidon_-430x430.jpg",
+    image: Liyakdigital,
     category: "not",
     status: "brand",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/Liyak-aug-15.jpg",
+    image: bidenCycle2,
     category: "not",
     status: "brand",
   },
   {
-    image:
-      "https://zigzagdigitalsolutions.com/wp-content/uploads/2023/05/digital-marketing-agency-manjeri-430x430.jpg",
+    image: bidenCycle3,
+    category: "not",
+    status: "brand",
+  },
+  {
+    image: bidenCycle4,
+    category: "not",
+    status: "social",
+  },
+  {
+    image: bidenCycle5,
+    category: "not",
+    status: "brand",
+  },
+  {
+    image: bidenCycle6,
     category: "not",
     status: "brand",
   },

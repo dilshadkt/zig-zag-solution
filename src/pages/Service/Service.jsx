@@ -46,7 +46,7 @@ export const Content = styled.span`
     font-size: 18px;
   }
   line-height: 30px;
-  font-size: 23px;
+  font-size: 21px;
   text-align: justify;
 `;
 export const Highlite = styled.span`
@@ -169,7 +169,7 @@ const Serivce = () => {
         />
       </Helmet>
       <Wrapper>
-        <HeaderImg src={Corperate}></HeaderImg>
+        <HeaderImg src={Corperate} alt={Corperate}></HeaderImg>
         <Header>Best Corporate Branding Service in Malappuram</Header>
         <Content>
           Welcome to <Highlite>Zig Zag </Highlite>Digital Solutions, your
@@ -195,27 +195,27 @@ const Serivce = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={Strategy} />
+                <Image src={Strategy} alt={Strategy} />
                 Brand Strategy
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={Visual} />
+                <Image src={Visual} alt={Visual} />
                 Visual Identity
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
-                <Image src={Messaging} />
+                <Image src={Messaging} alt={Messaging} />
                 Brand Messaging
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
-                <Image src={Consistancy} />
+                <Image src={Consistancy} alt={Consistancy} />
                 Online Presence
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
-                <Image src={Guidness} />
+                <Image src={Guidness} alt={Guidness} />
                 Brand Guidelines
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
-                <Image src={Precense} />
+                <Image src={Precense} alt={Precense} />
                 Brand Consistency
               </BoxItem>
             </BoxContainer>
@@ -224,7 +224,7 @@ const Serivce = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={Precense} status="service" />
+                  <Image src={Precense} status="service" alt={Precense} />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

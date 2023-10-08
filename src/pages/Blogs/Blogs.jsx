@@ -21,25 +21,27 @@ const Header = styled.h3`
 `;
 const Content = styled.div`
   @media only screen and (max-width: 768px) {
+    /* background-color: green; */
     margin: 50px 0;
   }
-  margin: 50px 10%;
+  margin: 30px 10%;
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
+
   justify-content: center;
 `;
 const Blog = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
-    min-width: 100%;
+    /* min-width: 100%; */
+    /* max-width: 150px; */
   }
   height: 520px;
   width: 30%;
   display: flex;
   flex-direction: column;
 
-  justify-content: space-around;
+  justify-content: space-between;
 
   overflow: hidden;
   border-radius: 20px;
@@ -63,6 +65,8 @@ const Image = styled.img`
   object-fit: cover;
 `;
 const ImgaeContainer = styled.div`
+  height: 250px;
+  overflow: hidden;
   width: 100%;
   display: flex;
   align-items: center;
@@ -86,19 +90,33 @@ const ReadMore = styled.span`
   margin-top: 10px;
   cursor: pointer;
 `;
+const SubHEader = styled.h5`
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
+  display: flex;
+
+  justify-content: center;
+  font-size: 18px;
+`;
+
 const Blogs = () => {
   return (
     <Container>
       <Wrapper>
         <Header>Blogs</Header>
+        <SubHEader>
+          Gain Digital Marketing Industry Insights and Trending Tips
+        </SubHEader>
+
         <Content>
           {BlogsData.map((item, index) => (
             <Blog key={index}>
               <ImgaeContainer>
-                <Image src={item.image} />
+                <Image src={item.image} alt={item.image} />
               </ImgaeContainer>
               <Title>{item.title}</Title>
-              <Descrption>{item.desc}</Descrption>
+              <Descrption>{item.desc.slice(0, 180)}...</Descrption>
               <ReadMore>
                 <Link
                   style={{ color: "inherit", textDecoration: "none" }}

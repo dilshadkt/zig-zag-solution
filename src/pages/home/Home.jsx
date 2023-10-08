@@ -63,11 +63,20 @@ const Content = styled.div`
     margin-left: 0;
     margin-right: 0;
   }
-  line-height: 45px;
+
+  /* line-height: 45px; */
   margin-left: 75px;
   margin-right: 30px;
   color: white;
   font-size: 50px;
+`;
+const ContentHead = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 300;
 `;
 const Bottom = styled.div`
   @media screen and (max-width: 768px) {
@@ -93,8 +102,12 @@ const Home = () => {
           <Top>
             <Left>
               <Content>
-                A Comprehensive Branding & Digital Marketing Agency in&nbsp;
-                <b>Malappuram!</b>
+                <ContentHead>
+                  {" "}
+                  A Comprehensive Branding & Digital Marketing Agency in&nbsp;
+                  <b>Malappuram!</b>
+                </ContentHead>
+
                 <Description>
                   Digital Marketing Company in Malappuram providing <br />
                   result-oriented marketing solutions for brands since 2020.{" "}
@@ -102,7 +115,7 @@ const Home = () => {
               </Content>
             </Left>
             <Right>
-              <Image src={Branding} />
+              <Image src={Branding} alt={Branding} />
             </Right>
           </Top>
           <Bottom>

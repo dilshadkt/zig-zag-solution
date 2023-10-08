@@ -78,7 +78,6 @@ const SocialMedia = () => {
   const [content, setContent] = useState([datas[0]]);
   function changeThem(id) {
     const result = datas.filter((item) => item.id === id);
-    console.log(result);
     setContent(result);
   }
   return (
@@ -112,7 +111,7 @@ const SocialMedia = () => {
       </Helmet>
 
       <Wrapper>
-        <HeaderImg src={Social} />
+        <HeaderImg src={Social} alt={Social} />
         <Header>Social Media Marketing in Malappuram</Header>
         <Content>
           Our team of social media experts specializes in crafting strategic and
@@ -146,24 +145,26 @@ const SocialMedia = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={Planning} />
+                <Image src={Planning} alt={Planning} />
                 Strategy Planning
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
-                <Image src={Creattion} /> Compelling Content Creation
+                <Image src={Creattion} alt={Creattion} /> Compelling Content
+                Creation
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(3)}>
-                <Image src={Community} /> Community Engagement
+                <Image src={Community} alt={Community} /> Community Engagement
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(4)}>
-                <Image src={Advertisment} />
+                <Image src={Advertisment} alt={Advertisment} />
                 Targeted Advertising
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(5)}>
-                <Image src={Performence} /> Performance Analytics
+                <Image src={Performence} alt={Performence} /> Performance
+                Analytics
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(6)}>
-                <Image src={Adaptation} /> Adaptation
+                <Image src={Adaptation} alt={Adaptation} /> Adaptation
               </BoxItem>
             </BoxContainer>
           </Left>
@@ -171,7 +172,11 @@ const SocialMedia = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={Performence} status={"service"} />
+                  <Image
+                    src={Performence}
+                    status={"service"}
+                    alt={Performence}
+                  />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

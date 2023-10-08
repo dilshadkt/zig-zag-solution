@@ -59,7 +59,7 @@ const Media = () => {
         />
       </Helmet>
       <Wrapper>
-        <HeaderImg src={Social} />
+        <HeaderImg src={Social} alt={Social} />
         <Header>Media Production Services in Malappuram</Header>
         <Content>
           As a cutting-edge digital marketing agency in Malappuram, we
@@ -78,7 +78,7 @@ const Media = () => {
           <Left>
             <BoxContainer>
               <BoxItem onMouseEnter={() => changeThem(1)}>
-                <Image src={Planning} />
+                <Image src={Planning} alt={Planning} />
                 Creative Conceptualization
               </BoxItem>
               <BoxItem onMouseEnter={() => changeThem(2)}>
@@ -106,7 +106,7 @@ const Media = () => {
             <RightContainer>
               {content.map((item, index) => (
                 <div key={index}>
-                  <Image src={Performence} status="service" />
+                  <Image src={Performence} status="service" alt={Performence} />
                   <SubHeader>{item.title}</SubHeader>
                   <Content section="right">{item.desc}</Content>
                 </div>

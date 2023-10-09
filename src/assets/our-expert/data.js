@@ -8,16 +8,16 @@ import unknow from "./unknown.jpeg";
 const people = [
   {
     id: 1,
+    image: hakeem,
+    name: "Hakeem",
+    title: "co-founder &marketer ",
+  },
+  {
+    id: 2,
     image: jubair,
 
     name: " Jubair",
     title: "founder & ceo",
-  },
-  {
-    id: 2,
-    image: hakeem,
-    name: "Hakeem",
-    title: "co-founder &marketer ",
   },
   {
     id: 3,

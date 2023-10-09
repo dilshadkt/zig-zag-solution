@@ -4,7 +4,7 @@ import { Works } from "../../assets/Works/Works";
 import { useParams } from "react-router-dom";
 const Content = styled.div`
   @media only screen and (max-width: 768px) {
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   justify-content: center;
@@ -14,10 +14,11 @@ const Content = styled.div`
   margin: 50px 10%;
 `;
 const Image = styled.img`
+  @media only screen and (max-width: 768px) {
+    object-fit: fill;
+  }
   width: 100%;
   height: 100%;
-  min-width: 200px;
-  min-height: 200px;
   transition: all 0.5s ease-in-out;
   &:hover {
     transform: scale(1.03);
@@ -25,10 +26,10 @@ const Image = styled.img`
 `;
 const ImageContainer = styled.div`
   @media only screen and (max-width: 768px) {
-    width: 30%;
+    width: 35%;
     min-width: 140px;
     min-height: 100px;
-    height: 150px;
+    height: 140px;
     border-radius: 10px;
   }
   width: 30%;

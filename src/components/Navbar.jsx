@@ -328,7 +328,7 @@ const Navbar = () => {
           </Box>
           <Box>
             <Link
-              to={"/service/corperate"}
+              to={"/service/home"}
               style={{
                 textDecoration: "none",
                 color: "inherit",
